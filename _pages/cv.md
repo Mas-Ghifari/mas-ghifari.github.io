@@ -3,62 +3,26 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+### Education
+* **Doctor of Computer Science (Dr.)** – Institut Teknologi Bandung (ITB)[cite: 2]
+* **Master of Engineering (M.T.)** – Institut Teknologi Bandung (ITB)[cite: 2]
+* **Bachelor of Engineering (S.T.)** – Telkom University[cite: 2]
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+### Research Grants (Selection)
+| Year | Research Title | Funding Source |
+|:---|:---|:---|
+| 2025 | Adaptive and Incremental Label Propagation untuk Deteksi Komunitas pada Graf Heterogen Dinamis | DRP UMY[cite: 2] |
+| 2025 | Sistem Peringatan Dini Hama Tanaman Berbasis Computer Vision dengan Raspberry Pi dan Algoritma YOLO | DRP UMY[cite: 2] |
+| 2024 | Deteksi Komunitas berbasis Label Propagation pada Graf Heterogen | LRI UMY[cite: 2] |
+| 2023 | Development of a Link Prediction Method based on Label Propagation in Heterogeneous and Dynamic Graphs | P2MI ITB[cite: 2] |
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+### Certifications
+* **Information Technology Specialist in Artificial Intelligence** – CertNexus (July 2025)[cite: 2]
+* **Information Technology Specialist in Data Analytics** – CertNexus (August 2024)[cite: 2]
+* **Technology Literacy for Educators - 21st Century Learning Design** – Microsoft (February 2025)[cite: 2]
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+### Teaching
+* **Undergraduate**: Data Science & Data Mining, Big Data Analysis, Applied Artificial Intelligence, Algorithms & Data Structures[cite: 2].
+* **Postgraduate**: Datawarehouse & Data Mining, Programming for Data Analytics, Business Intelligence & Analytics[cite: 2].
