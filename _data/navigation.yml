@@ -21,7 +21,12 @@ main:
     url: /awards/
     
   - title: "Lectures"
-    url: /lectures/
+    url: /lectures/regular/
+    children:
+      - title: "Invited"
+        url: /lectures/invited/
+      - title: "Regular"
+        url: /lectures/regular/
     
   - title: "Services"
     url: /services/
