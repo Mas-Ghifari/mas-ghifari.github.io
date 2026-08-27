@@ -29,4 +29,5 @@ author_profile: true
 | Year | Awards |
 | :--- | :--- |
 | 2026 | Favorite Lecturer Award, Even Semester 2025/2026, Department of Information Technology, Universitas Muhammadiyah Yogyakarta. |
+
 <!--| 2025 | Exemplary Academic Researcher Award, Department of Information Technology, Universitas Muhammadiyah Yogyakarta. |-->
