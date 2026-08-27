@@ -2,7 +2,7 @@
 layout: single
 title: "Awards and Grants"
 permalink: /awards/
-author_profile: false
+author_profile: true
 ---
 
 ### ACQUIRED RESEARCH GRANTS
