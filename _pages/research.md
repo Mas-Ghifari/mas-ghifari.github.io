@@ -15,8 +15,9 @@ Our research areas span from developing advanced graph mining algorithms for com
 
 ### Incremental and Dynamic Community Detection in Complex Heterogeneous Networks
 
+<!--gambar diletakkan di folder images/-->
 <p align="center">
-  <img src="/images/profil.png" alt="HCD-LEAM Framework" style="width: 85%; max-width: 650px; border-radius: 8px;">
+  <img src="/images/profile.png" alt="HCD-LEAM Framework" style="width: 85%; max-width: 650px; border-radius: 8px;">
   <br>
   <small><i>Figure 1: Framework of Heterogeneous Community Detection via Local Exploration and Adaptive Merging (HCD-LEAM).</i></small>
 </p>
@@ -27,7 +28,7 @@ Complex real-world systems—from scientific collaboration platforms to dynamic 
 
 ### Human-Validated Benchmarks and Explainable AI for Indonesian Social Computing
 
-<img src="/images/profil.png" alt="Spatial Deforestation Analysis" style="width: 280px; float: right; margin: 0 0 15px 15px; border-radius: 6px;">
+<img src="/images/profile.png" alt="Spatial Deforestation Analysis" style="width: 280px; float: right; margin: 0 0 15px 15px; border-radius: 6px;">
 
 While Large Language Models and deep learning transformers have revolutionized Natural Language Processing (NLP), applying them to Indonesian social media and e-commerce text presents severe challenges due to noisy user-generated content, localized slangs, and lack of automatic supervision auditing. Our research group focuses on **Social Computing and Explainable AI (XAI)** to build robust, interpretable NLP frameworks. In our recent studies, we established human-validated benchmarks to audit automatic supervision in aspect-based sentiment analysis and integrated attention-based mechanisms to convert subword attention into clear, word-level explanations for fake news detection. Furthermore, we develop contrastive learning and multi-task transformer models (such as MentalBERT adaptation) to analyze fine-grained user sentiment and mental health signals from digital footprints, ensuring that automated decision-making systems remain transparent, ethically sound, and trustworthy.
 
