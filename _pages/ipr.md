@@ -2,7 +2,7 @@
 layout: single
 title: "Intellectual Property Rights"
 permalink: /ipr/
-author_profile: false
+author_profile: true
 ---
 
 Below is a list of intellectual property rights (IPRs) of various softwares, machine learning models, IoT frameworks, and digital platforms built by our research group. The IPRs have been granted by the Ministry of Law and Human Rights, Republic of Indonesia.
