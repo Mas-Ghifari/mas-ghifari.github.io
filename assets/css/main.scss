@@ -56,3 +56,45 @@
   width: 100% !important;
   display: table !important;
 }
+
+/* Style Dropdown Menu Navigasi */
+.masthead__menu-item {
+  position: relative;
+}
+
+.masthead__menu-item ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 8px 0;
+  list-style: none;
+  z-index: 999;
+  border-radius: 4px;
+}
+
+.masthead__menu-item:hover > ul {
+  display: block;
+}
+
+.masthead__menu-item ul li {
+  display: block;
+  width: 100%;
+}
+
+.masthead__menu-item ul li a {
+  color: #333333 !important;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+.masthead__menu-item ul li a:hover {
+  background-color: #f1f1f1;
+  color: #000000 !important;
+}
