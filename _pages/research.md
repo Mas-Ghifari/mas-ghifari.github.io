@@ -2,7 +2,7 @@
 layout: single
 title: "Research"
 permalink: /research/
-author_profile: false
+author_profile: true
 ---
 
 Our research areas span from developing advanced graph mining algorithms for complex networks to extracting actionable insights from large-scale unstructured social media and spatial-temporal data. Our latest research interest has been implementing deep learning and network science technology for various data-driven applications such as:
