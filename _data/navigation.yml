@@ -22,12 +22,7 @@ main:
     
   - title: "Lectures"
     url: /lectures/regular/
-    children:
-      - title: "Invited"
-        url: /lectures/invited/
-      - title: "Regular"
-        url: /lectures/regular/
-    
+      
   - title: "Services"
     url: /services/
     
@@ -42,3 +37,11 @@ main:
     
   - title: "Guide"
     url: /markdown/
+
+lectures_nav:
+  - title: "Lectures"
+    children:
+      - title: "Invited Lectures"
+        url: /lectures/invited/
+      - title: "Regular Lectures"
+        url: /lectures/regular/
