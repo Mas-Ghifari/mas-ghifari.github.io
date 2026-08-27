@@ -68,7 +68,9 @@
 }
 
 /* Style Dropdown Menu Navigasi */
-/* Mencegah penyingkiran elemen dropdown oleh greedy-nav */
+/* FIX DROPDOWN LEADER & ALIGNMENT */
+.masthead,
+.masthead__menu,
 .greedy-nav {
   overflow: visible !important;
 }
@@ -77,7 +79,7 @@
   position: relative !important;
 }
 
-/* Styling Dropdown agar pas dengan tema */
+/* Container utama dropdown */
 .masthead__menu-item ul {
   display: none;
   position: absolute;
@@ -85,7 +87,7 @@
   left: 0;
   background-color: #252a32 !important;
   min-width: 160px;
-  box-shadow: 0px 6px 12px rgba(0,0,0,0.3);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
   padding: 6px 0 !important;
   list-style: none !important;
   margin: 0 !important;
@@ -93,26 +95,44 @@
   border-radius: 4px;
 }
 
+/* Tampilkan saat di-hover */
 .masthead__menu-item:hover > ul {
   display: block !important;
 }
 
+/* Item menu di dalam dropdown */
 .masthead__menu-item ul li {
   display: block !important;
-  width: 100%;
+  width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
+  text-align: left !important; /* Menyamakan perataan teks ke kiri */
 }
 
+/* Tautan di dalam dropdown (area aktif klik) */
 .masthead__menu-item ul li a {
   color: #ffffff !important;
-  padding: 8px 16px !important;
+  padding: 10px 18px !important;
   text-decoration: none !important;
   display: block !important;
   white-space: nowrap;
-  font-size: 0.85em !important;
+  font-size: 0.9em !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  line-height: 1.2 !important;
+  position: relative;
+  z-index: 100000 !important; /* Memastikan tautan bisa diklik sepenuhnya */
 }
 
+/* Efek Hover per baris menu */
 .masthead__menu-item ul li a:hover {
   background-color: #3b424e !important;
+  color: #ffffff !important;
+}
+
+/* Menghapus garis/garis bawah bawaan tema yang memicu masalah bentrok & alignment */
+.masthead__menu-item ul li::after,
+.masthead__menu-item ul li a::after {
+  display: none !important;
+  content: "" !important;
 }
