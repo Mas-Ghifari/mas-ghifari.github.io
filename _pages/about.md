@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<img src="/images/profile.png" alt="Dr. Nasy'an Taufiq Al Ghifari" style="width: 180px; border-radius: 50%; float: right; margin: 0 0 20px 20px;">
+<img src="/images/IMG_5329a + jas.jpg" alt="Dr. Nasy'an Taufiq Al Ghifari" style="width: 180px; border-radius: 50%; float: right; margin: 0 0 20px 20px;">
 
 Dr. Nasy'an Taufiq Al Ghifari adalah seorang akademisi dan peneliti yang berfokus pada bidang **Data Science**, **Graph Mining**, dan **Applied Artificial Intelligence** di Indonesia[cite: 2]. Beliau memperoleh gelar S.T. dari Universitas Telkom, serta M.T. dan Dr. (Doctor of Computer Science) dari Institut Teknologi Bandung (ITB)[cite: 2].
 
