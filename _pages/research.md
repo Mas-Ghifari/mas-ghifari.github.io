@@ -18,6 +18,7 @@ Our research areas span from developing advanced graph mining algorithms for com
 <!--gambar diletakkan di folder images/-->
 <p align="center">
   <img src="/images/figure2.png" alt="DHCD-iLEAM" style="width: 85%; max-width: 650px; border-radius: 8px;">
+  <br>
   <img src="/images/Figure1 Paten.png" alt="HCD-LEAM" style="width: 85%; max-width: 650px; border-radius: 8px;">
   <br>
   <small><i>Framework of Dynamic Heterogeneous Community Detection.</i></small>
