@@ -68,43 +68,58 @@
 }
 
 /* Style Dropdown Menu Navigasi */
-.masthead__menu-item {
-  position: relative;
+/* Memastikan bilah navigasi atas tidak memotong dropdown */
+.masthead {
+  overflow: visible !important;
 }
 
+.masthead__menu {
+  overflow: visible !important;
+}
+
+/* Mengatur posisi container dropdown */
+.masthead__menu-item {
+  position: relative !important;
+}
+
+/* Mengatur tampilan menu anak (Invited & Regular) */
 .masthead__menu-item ul {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #ffffff;
-  min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 8px 0;
-  list-style: none;
-  z-index: 999;
+  background-color: #252a32; /* Warna latar menyesuaikan tema gelap */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+  padding: 6px 0;
+  list-style: none !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
   border-radius: 4px;
 }
 
+/* Tampilkan dropdown saat kursor diarahkan ke menu utama */
 .masthead__menu-item:hover > ul {
-  display: block;
+  display: block !important;
 }
 
 .masthead__menu-item ul li {
-  display: block;
+  display: block !important;
   width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .masthead__menu-item ul li a {
-  color: #333333 !important;
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
+  color: #ffffff !important;
+  padding: 10px 16px !important;
+  text-decoration: none !important;
+  display: block !important;
   white-space: nowrap;
-  font-size: 0.9em;
+  font-size: 0.9em !important;
 }
 
 .masthead__menu-item ul li a:hover {
-  background-color: #f1f1f1;
-  color: #000000 !important;
+  background-color: #3b424e !important;
+  color: #ffffff !important;
 }
