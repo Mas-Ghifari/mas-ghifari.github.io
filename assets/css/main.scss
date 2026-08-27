@@ -41,3 +41,18 @@
 .author__avatar {
   display: none !important;
 }
+
+/* Mengoptimalkan lebar konten utama agar mengisi ruang kosong kanan */
+.initial-content,
+.page,
+.archive {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Memastikan tabel membentang luas mengikuti area halaman */
+.page__content table,
+.archive__item table {
+  width: 100% !important;
+  display: table !important;
+}
