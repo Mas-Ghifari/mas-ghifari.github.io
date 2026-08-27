@@ -8,9 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-Dr. Nasy'an Taufiq Al Ghifari adalah seorang akademisi dan peneliti yang berfokus pada bidang **Data Science**, **Graph Mining**, dan **Applied Artificial Intelligence** di Indonesia. Beliau memperoleh gelar S.T. dari Universitas Telkom, serta M.T. dan Dr. (Doctor of Computer Science) dari Institut Teknologi Bandung (ITB)[cite: 2].
+<img src="/images/profile.png" alt="Dr. Nasy'an Taufiq Al Ghifari" style="width: 180px; border-radius: 50%; float: right; margin: 0 0 20px 20px;">
+
+Dr. Nasy'an Taufiq Al Ghifari adalah seorang akademisi dan peneliti yang berfokus pada bidang **Data Science**, **Graph Mining**, dan **Applied Artificial Intelligence** di Indonesia[cite: 2]. Beliau memperoleh gelar S.T. dari Universitas Telkom, serta M.T. dan Dr. (Doctor of Computer Science) dari Institut Teknologi Bandung (ITB)[cite: 2].
 
 Saat ini, beliau menjabat sebagai **Assistant Professor** di Program Studi Teknologi Informasi, Universitas Muhammadiyah Yogyakarta, serta memimpin Laboratorium Riset Data Science & AI di UMY[cite: 2].
+
+<div style="clear: both;"></div>
 
 ### Focus Research Areas
 * **Penerapan Graph Mining**: Analisis struktur dan dinamika jaringan sosial, jaringan transportasi, dan jaringan kolaborasi ilmiah[cite: 2].
