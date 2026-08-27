@@ -16,22 +16,6 @@
             {% endif %}
             <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
-              
-              {% comment %} Fitur Sub-Menu Dropdown {% endcomment %}
-              {% if link.children %}
-                <ul>
-                  {% for child in link.children %}
-                    {% if child.url contains 'http' %}
-                      {% assign child_domain = '' %}
-                    {% else %}
-                      {% assign child_domain = base_path %}
-                    {% endif %}
-                    <li class="{% if page.url == child.url %}selected{% endif %}">
-                      <a href="{{ child_domain }}{{ child.url }}">{{ child.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
             </li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
