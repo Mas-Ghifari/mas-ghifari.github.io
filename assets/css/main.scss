@@ -42,17 +42,19 @@
   display: none !important;
 }
 
-/* Mengoptimalkan lebar konten utama agar mengisi ruang kosong kanan */
-.initial-content,
-.page,
-.archive {
-  max-width: 100% !important;
-  width: 100% !important;
+/* Mengatur lebar konten agar rapi di samping sidebar tanpa bentrok */
+@media (min-width: 64em) {
+  .archive,
+  .page {
+    float: right !important;
+    width: calc(100% - 300px) !important; /* Memberi ruang 300px untuk sidebar */
+    padding-right: 0 !important;
+  }
 }
 
-/* Memastikan tabel membentang luas mengikuti area halaman */
+/* Memastikan tabel mengisi seluruh lebar area konten kanan */
 .page__content table,
-.archive__item table {
+.archive table {
   width: 100% !important;
   display: table !important;
 }
