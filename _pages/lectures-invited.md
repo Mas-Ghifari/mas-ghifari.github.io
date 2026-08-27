@@ -3,8 +3,6 @@ layout: single
 title: "Invited Lectures & Visiting Professorships"
 permalink: /lectures/invited/
 author_profile: true
-sidebar:
-  nav: "lectures_nav"
 ---
 
 Below is the record of invited lectures, visiting professorships, and workshop speaking engagements across national and international institutions.
