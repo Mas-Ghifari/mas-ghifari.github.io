@@ -3,8 +3,6 @@ layout: single
 title: "Regular Lectures"
 permalink: /lectures/regular/
 author_profile: true
-sidebar:
-  nav: "lectures_nav"
 ---
 
 Below is the record of regular teaching activities across undergraduate and postgraduate programs.
