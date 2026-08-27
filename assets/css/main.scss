@@ -42,17 +42,25 @@
   display: none !important;
 }
 
-/* Mengatur lebar konten agar rapi di samping sidebar tanpa bentrok */
+/* Perbaikan posisi konten agar tidak menimpa sidebar */
 @media (min-width: 64em) {
+  /* Mengunci sidebar di posisi kiri */
+  .sidebar {
+    float: left !important;
+    width: 300px !important;
+  }
+
+  /* Mendorong konten utama ke kanan sebesar lebar sidebar */
   .archive,
   .page {
     float: right !important;
-    width: calc(100% - 300px) !important; /* Memberi ruang 300px untuk sidebar */
-    padding-right: 0 !important;
+    width: calc(100% - 320px) !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
   }
 }
 
-/* Memastikan tabel mengisi seluruh lebar area konten kanan */
+/* Memastikan tabel dan elemen halaman menyesuaikan lebar konten */
 .page__content table,
 .archive table {
   width: 100% !important;
