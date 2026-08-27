@@ -68,7 +68,7 @@
 }
 
 /* Style Dropdown Menu Navigasi */
-/* FIX DROPDOWN LEADER & ALIGNMENT */
+/* FIX DROPDOWN & TEXT ALIGNMENT */
 .masthead,
 .masthead__menu,
 .greedy-nav {
@@ -79,60 +79,58 @@
   position: relative !important;
 }
 
-/* Container utama dropdown */
-.masthead__menu-item ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+/* Kotak Dropdown */
+.masthead__menu-item ul.dropdown-menu {
+  display: none !important;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
   background-color: #252a32 !important;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  min-width: 150px !important;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4) !important;
   padding: 6px 0 !important;
   list-style: none !important;
   margin: 0 !important;
-  z-index: 99999 !important;
-  border-radius: 4px;
+  z-index: 999999 !important;
+  border-radius: 4px !important;
 }
 
-/* Tampilkan saat di-hover */
-.masthead__menu-item:hover > ul {
+/* Tampilkan dropdown saat hover di semua kondisi (termasuk kondisi selected) */
+.masthead__menu-item:hover > ul.dropdown-menu,
+.masthead__menu-item.selected:hover > ul.dropdown-menu {
   display: block !important;
 }
 
-/* Item menu di dalam dropdown */
-.masthead__menu-item ul li {
+/* Item di dalam dropdown */
+.masthead__menu-item ul.dropdown-menu li {
   display: block !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
-  text-align: left !important; /* Menyamakan perataan teks ke kiri */
+  text-align: left !important;
 }
 
-/* Tautan di dalam dropdown (area aktif klik) */
-.masthead__menu-item ul li a {
+/* Tautan di dalam dropdown */
+.masthead__menu-item ul.dropdown-menu li a {
   color: #ffffff !important;
-  padding: 10px 18px !important;
+  padding: 8px 16px !important;
   text-decoration: none !important;
   display: block !important;
-  white-space: nowrap;
-  font-size: 0.9em !important;
-  font-weight: 600 !important;
-  text-align: left !important;
-  line-height: 1.2 !important;
-  position: relative;
-  z-index: 100000 !important; /* Memastikan tautan bisa diklik sepenuhnya */
+  white-space: nowrap !important;
+  font-size: 0.85em !important;
+  font-weight: 500 !important;
+  text-align: left !important; /* Memaksa perataan teks ke kiri penuh */
+  line-height: 1.4 !important;
 }
 
-/* Efek Hover per baris menu */
-.masthead__menu-item ul li a:hover {
+.masthead__menu-item ul.dropdown-menu li a:hover {
   background-color: #3b424e !important;
   color: #ffffff !important;
 }
 
-/* Menghapus garis/garis bawah bawaan tema yang memicu masalah bentrok & alignment */
-.masthead__menu-item ul li::after,
-.masthead__menu-item ul li a::after {
+/* Menghapus pseudo-element garis penyebab teks tidak seragam / bentrok */
+.masthead__menu-item ul.dropdown-menu li::after,
+.masthead__menu-item ul.dropdown-menu li a::after {
   display: none !important;
   content: "" !important;
 }
