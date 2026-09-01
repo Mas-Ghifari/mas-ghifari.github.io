@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Social Computing & Big Data"
 title_separator          : "-"
 name                     : &name "Dr. Nasy'an Taufiq Al Ghifari"
-description              : &description "Academic homepage and portfolio of Dr. Nasy'an Taufiq Al Ghifari"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Academic homepage and portfolio of Dr. Nasy'an Taufiq Al-Ghifari"   # Update this with a general description of your site, this is the default if not overr[...]
 url                      : https://mas-ghifari.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -312,7 +312,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
 
 
@@ -325,7 +324,7 @@ plugins:
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
