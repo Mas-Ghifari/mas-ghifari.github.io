@@ -10,7 +10,7 @@
 main:
   - title: "Research"
     url: /research/
-    
+
   - title: "Publications"
     url: /publications/
 
@@ -19,7 +19,7 @@ main:
 
   - title: "Awards"
     url: /awards/
-    
+
   - title: "Lectures"
     url: /lectures/regular/
     children:
@@ -27,18 +27,18 @@ main:
         url: /lectures/invited/
       - title: "Regular"
         url: /lectures/regular/
-      
+
   - title: "Services"
     url: /services/
-    
+
   - title: "Courses"
     url: /courses/
 
   #- title: "CV"
   #  url: /cv/
-    
+
   - title: "CV"
-     url: /cv-json/
-    
+    url: /cv-json/
+
   #- title: "Guide"
   #  url: /markdown/
