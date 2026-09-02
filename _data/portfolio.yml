@@ -361,12 +361,12 @@ ipr:
     title: "VisionAgri-Pi: Real-Time Crop Pest Early Warning System Based on Deep Learning Using the YOLO Algorithm Implemented on a Raspberry Pi Embedded System."
     number: "EC002026030234"
     date: "21 February 2026"
-  - year: 2025
-    type: "Patent"
+  - year: 2026
+    type: "Granted Patent"
     title: "METODE YANG DIIMPLEMENTASIKAN KOMPUTER UNTUK MENDETEKSI KOMUNITAS PADA GRAF HETEROGEN"
-    number: "S00202506901"
-    date: "24 July 2025"
-    notes: "Patent application under substantive examination by DJKI."
+    number: "IDS000014974"
+    date: "31 August 2026"
+    notes: "Granted Patent by DJKI (Application No. S00202506901)." #"Patent application under substantive examination by DJKI."
   # CALON PRODUK / DRAFT HKI YANG DIKOMENTARI:
   - year: 2026
     type: "Draft / Planned"
