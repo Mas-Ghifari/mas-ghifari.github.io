@@ -69,52 +69,61 @@ publications:
     venue: "Journal of Engineering and Technology for Industrial Applications"
     type: "Manuscript Under Review"
     notes: "CiteScore: 0.8"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Improving Fake News Detection Interpretability: From Subword Attention to Word Explanations"
     authors: "Al Ghifari, N. T., Al-Rasyid, A. H., Andriansyah, Y. D."
     venue: "International Journal of Artificial Intelligence"
     type: "Manuscript Under Review"
     notes: "CiteScore: 2.9"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Uncovering Structural Daily Load Profiles in Household Energy Consumption using Graph-Based Community Detection"
     authors: "Al Ghifari, N. T., Putri, I. A."
     venue: "Jurnal ELTIKOM: Jurnal Teknik Elektro, Teknologi Informasi dan Komputer"
     type: "Manuscript Under Review"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Uncovering Latent Community Structures in Global Aircraft Accident Networks Using Similarity-Based Graph Clustering"
     authors: "Luthfiah, L., Al Ghifari, N. T."
     venue: "Jurnal Nasional Teknik Elektro dan Teknologi Informasi"
     type: "Manuscript Under Review"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "DHCD-iLEAM: Incremental Dynamic Heterogeneous Community Detection via Local Exploration and Adaptive Merging"
     authors: "Al Ghifari, N. T., Nurwanto, Andrianie, P. S."
     venue: "Computer Science Journal"
     type: "Manuscript Under Review"
     notes: "CiteScore: 1.6"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "A Human-Validated Benchmark and Audit of Automatic Supervision for Indonesian Aspect-Based Sentiment Analysis"
     authors: "Citra, M. B., Al Ghifari, N. T., Irfan, A. A. A."
     venue: "Discover Artificial Intelligence"
     type: "Manuscript Under Review"
     notes: "CiteScore: 6.0"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "A Systematic Evaluation Framework for Daily Air Quality Prediction in Jakarta"
     authors: "Al Ghifari, N. T., Al Hakim, H. B."
     venue: "Engineering Applications of Artificial Intelligence"
     type: "Manuscript Under Review"
     notes: "CiteScore: 11.7"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Heterogeneous Community Detection with Local Exploration and Adaptive Merging"
     authors: "Al Ghifari, N. T., Habiby, W. N., Wiyono, G., Syahida, H. K."
     venue: "Social Network Analysis and Mining"
     type: "Manuscript Under Review"
     notes: "CiteScore: 6.4"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Transfer Learning using DenseNet201 for Web-Based Histopathological Image Detection of Malignant Lymphoma"
     authors: "Furji, Riyadi, S., Damarjati, C., Al Ghifari, N. T., Andi, T., Wenang, S., Yuliansyah, H., Nguyen, T. T."
     venue: "International Journal of Computing and Digital Systems"
     type: "Manuscript Under Review"
     notes: "CiteScore: 3.2"
+    corresponding_author: "Riyadi, S."
 # ==============================
 # INTERNATIONAL JOURNALS
 # ==============================
@@ -127,6 +136,7 @@ publications:
     number: "2"
     pages: "231"
     doi: "https://doi.org/10.5614/itbj.ict.res.appl.2023.17.2.7"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2018
     title: "A Multi-robot System Coordination Design and Analysis on Wall Follower Robot Group"
     authors: "Jati, A. N., Saputra, R. E., Nurcahyadi, M. G., Al Ghifari, N. T."
@@ -135,6 +145,7 @@ publications:
     volume: "8"
     number: "6"
     doi: "http://doi.org/10.11591/ijece.v8i6.pp5098-5106"
+    corresponding_author: "Jati, A. N."
 # ==============================
 # NATIONAL JOURNALS
 # ==============================
@@ -145,6 +156,7 @@ publications:
     type: "National Journal"
     volume: "7"
     number: "5"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2025
     title: "DBCE: Dynamic Bipartite Contextual Embedding for Predicting National Science Olympiad Winners"
     authors: "Al Ghifari, N. T., Ramdhani, L. A., Riyadi, S."
@@ -154,6 +166,7 @@ publications:
     number: "2"
     pages: "78-92"
     url: "https://journal.uir.ac.id/index.php/ITJRD/article/view/21431"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2025
     title: "A Data-Driven Framework for Analyzing Popularity of Indian Film Adaptations Using K-Means and Random Forest"
     authors: "Al Ghifari, N. T., Wibowo, D. A."
@@ -163,6 +176,7 @@ publications:
     number: "2"
     pages: "54-62"
     url: "https://journal.umy.ac.id/index.php/eist/article/view/28415"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2021
     title: "Addressing Cold Start New User in Recommender System Based on Hybrid Approach: A review and bibliometric analysis"
     authors: "Al Ghifari, N. T., Sitohang, B., Saptawati, G. A. P."
@@ -172,6 +186,7 @@ publications:
     number: "1"
     pages: "1-16"
     doi: "https://doi.org/10.25299/itjrd.2021.vol6(1).6118"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2021
     title: "Reality of the Internet and social media addiction in Indonesian students"
     authors: "Al Ghifari, N. T., Surawijaya, A., Arifiansyah, F., Komarudin, A., Nugroho, D. H. T., Mahayana, D."
@@ -181,6 +196,7 @@ publications:
     number: "1"
     pages: "1-16"
     doi: "https://doi.org/10.26555/jifo.v15i1.a18951"
+    corresponding_author: "Al Ghifari, N. T."
 # ==============================
 # CONFERENCE PAPERS 2026
 # ==============================
@@ -190,30 +206,35 @@ publications:
     venue: "International Conference on Information Technology and Computing (ICITCOM)"
     type: "Conference Paper"
     pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Performance and Security Optimization of IoT-Based Precision Irrigation via Hybrid HTTP-WebSocket Architecture"
     authors: "Al Ghifari, N. T., Sasongko, L. R. R., Rachmadi, A. Y., Rausyanfikri, D. N., Ulinnuha, N. A., Wiyono, G."
     venue: "5th International Conference on Electronic and Electrical Engineering and Intelligent System (ICE3IS)"
     type: "Conference Paper"
     pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "A Comparative Usability Evaluation of Semi-Automated and Automated Digital Library Cataloging Interfaces"
     authors: "Al Ghifari, N. T., Olivia, N., Bayu, F. V., Rahmah, A. J."
     venue: "International Conference on Information Technology and Computing (ICITCOM)"
     type: "Conference Paper"
     pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "A Comparative Study of Supervised, Anomaly-Based, and Ensemble Learning Approaches for Credit Card Fraud Detection Under Extreme Class Imbalance"
     authors: "Al Ghifari, N. T., Tjappe, A. F. P. Y., Adriano, F. B."
     venue: "4th IEEE International Conference on Artificial Intelligence and Mechatronics Systems (AIMS)"
     type: "Conference Paper"
     pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Exploring Health Biomarker Patterns Using Clustering and Post-Clustering Analysis of Smoking Status"
     authors: "Al Ghifari, N. T., Dhafa, M., Arifah, L."
     venue: "Bioinformatics, Biomedical Engineering, and Biotechnology Exploring New Frontiers in Healthcare (BIOXPLORE)"
     type: "Conference Paper"
     pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Modeling the Dynamics of Food Security Index Growth Using District-Level Panel Data: Evidence from Indonesia"
     authors: "Al Ghifari, N. T., Rohman, E. A."
@@ -221,6 +242,7 @@ publications:
     type: "Conference Paper"
     pages: "1-6"
     url: "https://ieeexplore.ieee.org/document/11664749/"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "A Linguistic Structure-Based Short Answer Automatic Scoring System for Indonesian"
     authors: "Azmi, A. A., Al Ghifari, N. T., Ramdhani, L. A., Khilmiyah, A."
@@ -228,6 +250,7 @@ publications:
     type: "Conference Paper"
     pages: "1-6"
     doi: "https://doi.org/10.1109/SIML69834.2026.11621519"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Fine-Grained Aspect-Based Sentiment Analysis on Indonesian E-Commerce Reviews Using Multi-Task Learning with Pretrained Transformer Models"
     authors: "Citra, M. B., Al Ghifari, N. T."
@@ -235,6 +258,7 @@ publications:
     type: "Conference Paper"
     pages: "1-6"
     doi: "https://doi.org/10.1109/SIML69834.2026.11621828"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Analysis of Trends and Factors Associated with the Increase in Food Loss Using FAO Data-Based Machine Learning Approach: A Case Study of Cameroon"
     authors: "Al Ghifari, N. T., Maharani, P. H. D."
@@ -242,6 +266,7 @@ publications:
     type: "Conference Paper"
     pages: "1-6"
     doi: "https://doi.org/10.1109/SIML69834.2026.11621256"
+    corresponding_author: "Al Ghifari, N. T."
 # ==============================
 # CONFERENCE PAPERS 2025
 # ==============================
@@ -252,6 +277,7 @@ publications:
     type: "Conference Paper"
     pages: "1-6"
     doi: "https://doi.org/10.1109/SIML65326.2025.11081116"
+    corresponding_author: "Riyadi, S."
   - year: 2025
     title: "Typology of Offensive Play Styles in UEFA Champions League: A Machine Learning-Based Clustering Study"
     authors: "Al Ghifari, N. T., Hanafi, A."
@@ -259,6 +285,7 @@ publications:
     type: "Conference Paper"
     pages: "275-279"
     doi: "https://doi.org/10.1109/ICITCOM66635.2025.11265721"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2025
     title: "Predicting Internet Penetration in Indonesia Using XGBoost Regressor Based on Socioeconomic and Infrastructure Factors"
     authors: "Al Ghifari, N. T., Rahmadi, M. A. F."
@@ -266,6 +293,7 @@ publications:
     type: "Conference Paper"
     pages: "445-450"
     url: "https://ieeexplore.ieee.org/document/11265666"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2025
     title: "Implementation of Deep Learning for Breast Cancer Detection: A Systematic Literature Review"
     authors: "Riyadi, S., Chairani, I. T., Hariadi, T. K., Andriyani, A. D., Al Ghifari, N. T."
@@ -273,6 +301,7 @@ publications:
     type: "Conference Paper"
     pages: "401-406"
     doi: "https://doi.org/10.1109/ICE3IS66769.2025.11280895"
+    corresponding_author: "Riyadi, S."
   - year: 2025
     title: "Investigating the Limitation of Technical-Based Multivariate Time Series Modeling in Predicting Bitcoin Prices: A Case for Incorporating Exogenous Features"
     authors: "Andriansyah, Y. D., Al Ghifari, N. T."
@@ -280,6 +309,7 @@ publications:
     type: "Conference Paper"
     pages: "1-6"
     url: "https://ieeexplore.ieee.org/document/11265708"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2025
     title: "Smartphone-Based Tilapia Pond Water Quality Monitoring"
     authors: "Putra, A. A., Septiyanto, A., Ramadhan, H. W., Setyawan, H., Al Ghifari, N. T."
@@ -287,6 +317,7 @@ publications:
     type: "Conference Paper"
     pages: "368-372"
     doi: "https://doi.org/10.1109/ICITCOM66635.2025.11265215"
+    corresponding_author: "Al Ghifari, N. T."
 # ==============================
 # CONFERENCE PAPERS 2020
 # ==============================
@@ -297,6 +328,7 @@ publications:
     type: "Conference Paper"
     pages: "1-7"
     doi: "https://doi.org/10.1109/ICoSTA48221.2020.1570613756"
+    corresponding_author: "Al Ghifari, N. T."
 # ==============================
 # CONFERENCE PAPERS 2017
 # ==============================
@@ -307,6 +339,7 @@ publications:
     type: "Conference Paper"
     pages: "93-98"
     doi: "https://doi.org/10.1109/ICA.2017.8068420"
+    corresponding_author: "Al Ghifari, N. T."
 
 ipr:
   - year: 2026
