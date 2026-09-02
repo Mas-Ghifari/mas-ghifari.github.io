@@ -280,35 +280,43 @@
 }
 
 /* ==========================================================================
-   FIX DARK MODE SPECIFICITY UNTUK KOTAK FILTER CV
+   FIX HARDCODE LIGHT CONTAINER UNTUK KOTAK FILTER CV (DARK MODE FRIENDLY)
    ========================================================================== */
 
-/* 1. Target spesifik pada elemen label & teks di dalam panel kontrol CV */
+/* 1. Kunci background kotak kontrol agar SELALU putih/terang di mode apa pun */
+.cv-control-panel,
+div[class*="cv-control"],
+.cv-control-panel-wrapper {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 2. Kunci SEMUA teks & label di dalam kotak kontrol agar SELALU gelap */
 .cv-control-panel,
 .cv-control-panel *,
 .cv-control-panel label,
-.cv-control-panel input + label,
 .cv-control-panel span,
 .cv-control-panel p,
-.cv-control-panel h3,
-.cv-control-panel div {
-  color: #111111 !important;
+.cv-control-panel div,
+.cv-control-panel input + label {
+  color: #1e293b !important; /* Warna teks abu gelap tajam */
   opacity: 1 !important;
 }
 
-/* 2. Memastikan background kotak kontrol tetap terang bersih */
-.cv-control-panel {
-  background-color: #f8f9fa !important;
-  border: 1px solid #e0e0e0 !important;
+/* 3. Kunci juga dokumen lembar CV di bawahnya agar tetap seperti kertas putih */
+.cv-document-box {
+  background-color: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
 }
 
-/* 3. Paksa isi dokumen lembar CV agar tetap gelap & terbaca */
 .cv-document-box,
-.cv-document-box *,
-.cv-document-box label,
-.cv-document-box p,
-.cv-document-box li,
-.cv-document-box td,
-.cv-document-box th {
-  color: #222222 !important;
+.cv-document-box * {
+  color: #1e293b !important;
+}
+
+.cv-document-box a {
+  color: #0284c7 !important;
 }
