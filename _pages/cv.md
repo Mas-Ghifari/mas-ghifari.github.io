@@ -155,11 +155,16 @@ author_profile: true
   </div>
 
   <!-- Section: Certifications -->
-  <div id="sec-certs" class="cv-section">
+  <div id="sec-certifications" class="cv-section">
     <h3 style="margin-top: 20px;">PROFESSIONAL CERTIFICATIONS</h3>
     <ul>
       {% for item in site.data.portfolio.certifications %}
-      <li><b>{{ item.title }}</b> &mdash; {{ item.provider }} ({{ item.year }})</li>
+      <li>
+        <b>{{ item.title }}</b> &mdash; {{ item.provider }} ({{ item.year }})
+        {% if item.url and item.url != "" %}
+          [<a href="{{ item.url }}" target="_blank">Certificate</a>]
+        {% endif %}
+      </li>
       {% endfor %}
     </ul>
   </div>
