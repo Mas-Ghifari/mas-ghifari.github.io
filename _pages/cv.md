@@ -4,6 +4,44 @@ title: "Interactive Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 ---
+<style>
+  /* 1. Kunci background seluruh kotak kontrol & lembar CV agar tetap putih */
+  .cv-control-panel,
+  #cv-control-panel,
+  div[class*="cv-control"] {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+    padding: 20px !important;
+    border-radius: 8px !important;
+  }
+
+  /* 2. PAKSA SEMUA ELEMEN DI DALAM KOTAK KONTROL (termasuk label checkbox) BERWARNA GELAP */
+  .cv-control-panel *,
+  #cv-control-panel *,
+  div[class*="cv-control"] * {
+    color: #111827 !important; /* Warna hitam pekat */
+    -webkit-text-fill-color: #111827 !important; /* Mematikan override text dark mode */
+    opacity: 1 !important; /* Mencegah teks transparan/redup */
+    visibility: visible !important;
+  }
+
+  /* 3. Khusus untuk input checkbox agar centang biru tetap berfungsi normal */
+  .cv-control-panel input[type="checkbox"],
+  #cv-control-panel input[type="checkbox"] {
+    -webkit-text-fill-color: initial !important;
+    accent-color: #0284c7 !important; /* Warna centang */
+    cursor: pointer !important;
+  }
+
+  /* 4. Memastikan kertas lembar CV di bawahnya juga tetap putih & teks hitam */
+  .cv-document-box,
+  .cv-document-box * {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+  }
+</style>
 
 <!-- Panel Kontrol Pilih Kategori (Sembunyi saat di-print) -->
 <div class="no-print" style="background: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; border-radius: 8px; margin-bottom: 25px;">
