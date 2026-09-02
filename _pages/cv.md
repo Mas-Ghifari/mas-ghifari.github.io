@@ -31,7 +31,7 @@ author_profile: true
   <div style="text-align: center; margin-bottom: 25px;">
     <h2 style="margin: 0; padding: 0; color: #111;">Dr. Nasy'an Taufiq Al Ghifari</h2>
     <p style="margin: 5px 0; font-size: 1.1em; color: #444;">Assistant Professor in Computer Science / Data Mining Expert</p>
-    <p style="margin: 0; font-size: 0.95em; color: #666;">Universitas Muhammadiyah Yogyakarta | Email: nasyan@umy.ac.id</p>
+    <p style="margin: 0; font-size: 0.95em; color: #666;">Universitas Muhammadiyah Yogyakarta | Email: nasyan.taufiq@umy.ac.id</p>
   </div>
 
   <hr style="border: 0; border-top: 2px solid #333; margin-bottom: 20px;">
@@ -70,10 +70,13 @@ author_profile: true
     <h3 style="margin-top: 20px;">PUBLICATIONS</h3>
     <ol>
       {% for item in site.data.portfolio.publications %}
-      <li>
-        {{ item.authors }} ({{ item.year }}). <b>"{{ item.title }}"</b>. <i>{{ item.venue }}</i>.
-        {% if item.type %} <span style="font-size: 0.85em; color: #555;">[{{ item.type }}]</span>{% endif %}
-      </li>
+        {% comment %} Filter: Hanya tampilkan paper yang BUKAN status Under Review {% endcomment %}
+        {% if item.type != "Manuscript Under Review" %}
+          <li>
+            {{ item.authors }} ({{ item.year }}). <b>"{{ item.title }}"</b>. <i>{{ item.venue }}</i>.
+            {% if item.type %} <span style="font-size: 0.85em; color: #555;">[{{ item.type }}]</span>{% endif %}
+          </li>
+        {% endif %}
       {% endfor %}
     </ol>
   </div>
