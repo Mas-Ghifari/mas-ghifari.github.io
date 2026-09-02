@@ -86,7 +86,8 @@ author_profile: true
     <label><input type="checkbox" id="chk-grants" checked onchange="toggleSection('sec-grants')"> Research Grants</label>
     <label><input type="checkbox" id="chk-pubs" checked onchange="toggleSection('sec-pubs')"> Publications</label>
     <label><input type="checkbox" id="chk-ipr" checked onchange="toggleSection('sec-ipr')"> Intellectual Property (IPR)</label>
-    <label><input type="checkbox" id="chk-talks" checked onchange="toggleSection('sec-teaching')"> Teaching & Invited Lectures</label>
+    <label><input type="checkbox" id="chk-lectures" checked onchange="toggleSection('sec-lectures')"> Regular Teaching Experience</label>
+    <label><input type="checkbox" id="chk-talks" checked onchange="toggleSection('sec-talks')"> Invited Talks & Visiting</label>
     <label><input type="checkbox" id="chk-certs" checked onchange="toggleSection('sec-certifications')"> Certifications</label>
     <label><input type="checkbox" id="chk-orgs" checked onchange="toggleSection('sec-affiliations')"> Professional Affiliations</label>
     <label><input type="checkbox" id="chk-services" checked onchange="toggleSection('sec-community')"> Community Services</label>
@@ -181,37 +182,17 @@ author_profile: true
     </ul>
   </div>
 
-  <!-- Section: Teaching & Invited Lectures -->
-  <div id="sec-teaching" class="cv-section">
-    <h3 style="margin-top: 20px;">TEACHING & INVITED LECTURES</h3>
-    
-    <p style="margin-bottom: 6px; font-weight: bold; font-size: 0.95em;">Regular Courses</p>
-    <ul style="margin-top: 0; margin-bottom: 15px;">
-      {% for item in site.data.portfolio.regular_lectures %}
-      <li>
-        <b>{{ item.course_title }}</b> ({{ item.level }}) &mdash; {{ item.institution }} 
-        <span style="color: #555;">[{{ item.academic_years }}]</span>
-      </li>
-      {% endfor %}
-    </ul>
-
-    <p style="margin-bottom: 6px; font-weight: bold; font-size: 0.95em;">Invited Lectures & Visiting Professorships</p>
-    <ul style="margin-top: 0; margin-bottom: 15px;">
-      {% for item in site.data.portfolio.invited_lectures %}
-      <li>
-        <b>{{ item.title }}</b> &mdash; {{ item.institution }} 
-        <span style="color: #555;">({{ item.date }})</span>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <!-- Section: Regular Lectures -->
+  <!-- Section: Regular Teaching Experience (Format Tabel) -->
   <div id="sec-lectures" class="cv-section">
     <h3 style="margin-top: 20px;">REGULAR TEACHING EXPERIENCE</h3>
     <table>
       <thead>
-        <tr><th>Course Title</th><th style="width: 15%;">Level</th><th>Institution / Department</th><th style="width: 20%;">Academic Years</th></tr>
+        <tr>
+          <th>Course Title</th>
+          <th style="width: 15%; text-align: center;">Level</th>
+          <th>Institution / Department</th>
+          <th style="width: 20%; text-align: center;">Academic Years</th>
+        </tr>
       </thead>
       <tbody>
         {% for item in site.data.portfolio.regular_lectures %}
@@ -226,6 +207,18 @@ author_profile: true
     </table>
   </div>
 
+  <!-- Section: Invited Lectures & Visiting Professorships (Format List) -->
+  <div id="sec-talks" class="cv-section">
+    <h3 style="margin-top: 20px;">INVITED LECTURES & VISITING PROFESSORSHIPS</h3>
+    <ul>
+      {% for item in item in site.data.portfolio.invited_lectures %}
+      <li>
+        <b>{{ item.title }}</b> &mdash; {{ item.institution }} 
+        <span style="color: #555;">({{ item.date }})</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
   <!-- Section: Certifications -->
   <div id="sec-certifications" class="cv-section">
     <h3 style="margin-top: 20px;">PROFESSIONAL CERTIFICATIONS</h3>
