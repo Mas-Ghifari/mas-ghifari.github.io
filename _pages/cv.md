@@ -91,7 +91,9 @@ author_profile: true
     <h3 style="margin-top: 20px;">INTELLECTUAL PROPERTY RIGHTS (IPR)</h3>
     <ul>
       {% for item in site.data.portfolio.ipr %}
-      <li><b>{{ item.type }}</b>: {{ item.title }} (Reg No: {{ item.number }}, {{ item.year }})</li>
+        {% if item.type != "Draft / Planned" %}
+        <li><b>{{ item.type }}</b>: {{ item.title }} (Reg No: {{ item.number }}{% if item.year %}, {{ item.year }}{% endif %})</li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
