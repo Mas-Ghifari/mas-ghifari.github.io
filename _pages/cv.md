@@ -69,14 +69,19 @@ author_profile: true
   <div id="sec-pubs" class="cv-section">
     <h3 style="margin-top: 20px;">PUBLICATIONS</h3>
     <ol>
-      {% for item in site.data.portfolio.publications %}
-        {% comment %} Filter: Hanya tampilkan paper yang BUKAN status Under Review {% endcomment %}
-        {% if item.type != "Manuscript Under Review" %}
-          <li>
-            {{ item.authors }} ({{ item.year }}). <b>"{{ item.title }}"</b>. <i>{{ item.venue }}</i>.
-            {% if item.type %} <span style="font-size: 0.85em; color: #555;">[{{ item.type }}]</span>{% endif %}
-          </li>
-        {% endif %}
+      {% comment %} 
+        1. Filter paper yang BUKAN Under Review 
+        2. Urutkan berdasarkan tahun (sort: "year") 
+        3. Dibalik dari yang terbaru ke lama (reverse) 
+        4. Batasi maksimal 20 publikasi (limit: 20)
+      {% endcomment %}
+      {% assign published_papers = site.data.portfolio.publications | where_exp: "item", "item.type != 'Manuscript Under Review'" | sort: "year" | reverse %}
+      
+      {% for item in published_papers limit: 20 %}
+      <li>
+        {{ item.authors }} ({{ item.year }}). <b>"{{ item.title }}"</b>. <i>{{ item.venue }}</i>.
+        {% if item.type %} <span style="font-size: 0.85em; color: #555;">[{{ item.type }}]</span>{% endif %}
+      </li>
       {% endfor %}
     </ol>
   </div>
