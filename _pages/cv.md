@@ -103,7 +103,7 @@ author_profile: true
 <!-- Lembaran Dokumen CV -->
 <div class="cv-document-box">
   <div style="text-align: center; margin-bottom: 25px;">
-    <h2 style="margin: 0; padding: 0; color: #111;">Dr. Nasy'an Taufiq Al Ghifari</h2>
+    <h2 style="margin: 0; padding: 0; color: #111;">Dr. Nasy'an Taufiq Al Ghifari, S.T., M.T.</h2>
     <p style="margin: 5px 0; font-size: 1.1em; color: #444;">Assistant Professor in Computer Science / Data Mining Expert</p>
     <p style="margin: 0; font-size: 0.95em; color: #666;">Universitas Muhammadiyah Yogyakarta | Email: nasyan.taufiq@umy.ac.id</p>
   </div>
