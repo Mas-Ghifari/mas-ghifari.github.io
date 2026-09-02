@@ -109,12 +109,27 @@ author_profile: true
     </ul>
   </div>
 
-  <!-- Section: Invited Talks -->
-  <div id="sec-talks" class="cv-section">
-    <h3 style="margin-top: 20px;">INVITED LECTURES & VISITING PROFESSORSHIPS</h3>
-    <ul>
-      {% for item in site.data.portfolio.invited_talks %}
-      <li><b>{{ item.teaching_activity }}</b> &mdash; {{ item.location }} ({{ item.year }})</li>
+  <!-- Section: Teaching & Invited Lectures -->
+  <div id="sec-teaching" class="cv-section">
+    <h3 style="margin-top: 20px;">TEACHING & INVITED LECTURES</h3>
+    
+    <p style="margin-bottom: 6px; font-weight: bold; font-size: 0.95em;">Regular Courses</p>
+    <ul style="margin-top: 0; margin-bottom: 15px;">
+      {% for item in site.data.portfolio.regular_lectures %}
+      <li>
+        <b>{{ item.course_title }}</b> ({{ item.level }}) &mdash; {{ item.institution }} 
+        <span style="color: #555;">[{{ item.academic_years }}]</span>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <p style="margin-bottom: 6px; font-weight: bold; font-size: 0.95em;">Invited Lectures & Visiting Professorships</p>
+    <ul style="margin-top: 0; margin-bottom: 15px;">
+      {% for item in site.data.portfolio.invited_lectures %}
+      <li>
+        <b>{{ item.title }}</b> &mdash; {{ item.institution }} 
+        <span style="color: #555;">({{ item.date }})</span>
+      </li>
       {% endfor %}
     </ul>
   </div>
