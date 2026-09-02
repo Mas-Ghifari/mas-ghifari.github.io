@@ -207,11 +207,11 @@ author_profile: true
     </table>
   </div>
 
-  <!-- Section: Invited Lectures & Visiting Professorships (Format List) -->
+  <!-- Section 2: Invited Lectures & Visiting Professorships (Format List) -->
   <div id="sec-talks" class="cv-section">
     <h3 style="margin-top: 20px;">INVITED LECTURES & VISITING PROFESSORSHIPS</h3>
     <ul>
-      {% for item in item in site.data.portfolio.invited_lectures %}
+      {% for item in site.data.portfolio.invited_lectures %}
       <li>
         <b>{{ item.title }}</b> &mdash; {{ item.institution }} 
         <span style="color: #555;">({{ item.date }})</span>
@@ -219,6 +219,7 @@ author_profile: true
       {% endfor %}
     </ul>
   </div>
+  
   <!-- Section: Certifications -->
   <div id="sec-certifications" class="cv-section">
     <h3 style="margin-top: 20px;">PROFESSIONAL CERTIFICATIONS</h3>
