@@ -10,9 +10,10 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Social Computing & Big Data"
+subtitle                 : "Academic Portfolio & Interactive CV"
 title_separator          : "-"
 name                     : &name "Dr. Nasy'an Taufiq Al Ghifari"
-description              : &description "Academic homepage and portfolio of Dr. Nasy'an Taufiq Al-Ghifari"   # Update this with a general description of your site, this is the default if not overr[...]
+description              : &description "Academic Portfolio & Interactive Curriculum Vitae of Dr. Nasy'an Taufiq Al Ghifari - Assistant Professor in Computer Science & Data Mining Expert."   # Update this with a general description of your site, this is the default if not overr[...]
 url                      : https://mas-ghifari.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -145,11 +146,12 @@ facebook:
   publisher              :
 og_image                 :  # Social media default site image
 og_description           :  # Social media default site image description
+og_locale                : "en_US"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Dr. Nasy'an Taufiq Al Ghifari" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 
@@ -312,6 +314,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 
 
