@@ -6,32 +6,52 @@ author_profile: true
 ---
 
 <style>
-  /* 1. Paksa background kotak kontrol agar fleksibel & teksnya selalu kontras di Dark/Light Mode */
-  .cv-customizer-box {
-    background-color: var(--background-color, #f8f9fa) !important;
-    border: 1px solid #d1d5db !important;
+  /* Base Style untuk Kotak Filter (Mode Terang) */
+  .cv-filter-card {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
     padding: 20px !important;
     border-radius: 8px !important;
     margin-bottom: 25px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
   }
 
-  /* 2. Paksa Judul dan Label Checkbox Mengikuti Warna Teks Tema (Hitam saat Light, Putih/Terang saat Dark) */
-  .cv-customizer-box,
-  .cv-customizer-box h4,
-  .cv-customizer-box label,
-  .cv-customizer-box span {
-    color: var(--global-theme-color, inherit) !important;
+  .cv-filter-card h4,
+  .cv-filter-card label,
+  .cv-filter-card span {
+    color: #0f172a !important; /* Teks Hitam Pekat */
+    -webkit-text-fill-color: #0f172a !important;
     opacity: 1 !important;
   }
 
-  /* 3. Gaya Checkbox agar rapi */
-  .cv-customizer-box input[type="checkbox"] {
+  .cv-filter-card input[type="checkbox"] {
     accent-color: #0284c7 !important;
     margin-right: 6px !important;
     cursor: pointer !important;
   }
 
-  /* 4. Lembar Dokumen CV di Bawahnya Tetap Berbentuk Kertas Putih Bersih */
+  /* Force Dark Mode Override (Saat Tema Berubah Gelap) */
+  html[data-theme="dark"] .cv-filter-card,
+  body.dark-mode .cv-filter-card,
+  body[data-theme="dark"] .cv-filter-card,
+  .dark .cv-filter-card {
+    background-color: #1e293b !important; /* Latar Belakang Kotak Jadi Abu-Abu Gelap */
+    border-color: #334155 !important;
+  }
+
+  html[data-theme="dark"] .cv-filter-card h4,
+  html[data-theme="dark"] .cv-filter-card label,
+  body.dark-mode .cv-filter-card h4,
+  body.dark-mode .cv-filter-card label,
+  body[data-theme="dark"] .cv-filter-card h4,
+  body[data-theme="dark"] .cv-filter-card label,
+  .dark .cv-filter-card h4,
+  .dark .cv-filter-card label {
+    color: #f8fafc !important; /* Teks Berubah Jadi Putih Terang */
+    -webkit-text-fill-color: #f8fafc !important;
+  }
+
+  /* Lembar Dokumen CV (Selalu Berbentuk Kertas Putih) */
   .cv-document-box {
     background-color: #ffffff !important;
     border: 1px solid #d1d5db !important;
@@ -47,8 +67,8 @@ author_profile: true
   .cv-document-box li,
   .cv-document-box td,
   .cv-document-box th {
-    color: #111827 !important;
-    -webkit-text-fill-color: #111827 !important;
+    color: #0f172a !important;
+    -webkit-text-fill-color: #0f172a !important;
   }
 
   .cv-document-box a {
@@ -58,7 +78,7 @@ author_profile: true
 </style>
 
 <!-- Panel Kontrol Pilih Kategori (Sembunyi saat di-print) -->
-<div class="no-print cv-customizer-box">
+<div class="no-print cv-filter-card">
   <h4 style="margin-top: 0; margin-bottom: 12px;"><i class="fa-solid fa-sliders"></i> Customize Your CV Output:</h4>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 15px;">
