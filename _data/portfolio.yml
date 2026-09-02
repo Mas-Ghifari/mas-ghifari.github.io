@@ -482,22 +482,22 @@ certifications:
     url: "https://umyac-my.sharepoint.com/:b:/g/personal/nasyan_taufiq_umy_ac_id/IQCjkEJUHpPcR7tlySb6FBkaAUn3Pdz-J7RuvJAZ0rTfeN4?e=gIrNVo"
 
 organizations:
-  - year: "2026–Present"
-    name: "IEEE (Institute of Electrical and Electronics Engineers)"
-    role: "Member (International)"
-  - year: "2024–Present"
-    name: "APTIKOM (Asosiasi Pendidikan Tinggi Informatika dan Komputer)"
-    role: "Member (National)"
+  - name: "IEEE (Institute of Electrical and Electronics Engineers)"
+    role: "Member"
+    level: "International"
+    period: "2026–Present"
+  - name: "APTIKOM (Asosiasi Pendidikan Tinggi Informatika dan Komputer)"
+    role: "Member"
+    level: "National"
+    period: "2024–Present"
 
 community_services:
   - year: 2025
     title: "Implementation of Web-Based School Quality Assurance Information System for Vocational High Schools (SMK)"
-    type: "Community Service"
+    funder: ""
   - year: 2025
     title: "Pemberdayaan Petani Anggur Melalui Inovasi Sistem Irigasi Otomatis Berbasis IoT di Kampung Anggur Plumbungan"
-    venue: "DRP UMY"
-    type: "Community Service"
+    funder: "DRP UMY"
   - year: 2023
     title: "Pelatihan dan Kompetisi dalam Rangka Pengenalan Teknologi Metaverse kepada Siswa SMA/SMK"
-    venue: "P2MI ITB"
-    type: "Community Service"
+    funder: "P2MI ITB"
