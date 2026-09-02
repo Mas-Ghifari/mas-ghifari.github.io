@@ -204,7 +204,7 @@
    ATURAN CETAK / PRINT PDF (@media print)
    ========================================================================== */
 @media print {
-  /* 1. Sembunyikan elemen web yang tidak perlu dicetak */
+  /* 1. Sembunyikan semua elemen navigasi & layout web */
   .masthead,
   .sidebar,
   .page__footer,
@@ -218,23 +218,27 @@
     display: none !important;
   }
 
-  /* 2. Pengaturan Batas Kertas A4 */
+  /* 2. Pengaturan Margin Kertas A4 (Dikecilkan agar tidak terlalu menjorok) */
   @page {
-    margin: 1.5cm;
+    margin: 1.2cm 1.5cm !important;
     size: A4 portrait;
   }
 
   body {
     background: #ffffff !important;
     color: #000000 !important;
-    font-size: 10.5pt !important;
+    font-size: 10pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
+  /* 3. Paksa semua container halaman melebar 100% penuh tanpa padding bawaan tema */
   #main,
   .initial-content,
   .archive,
   .page,
-  .page__inner-wrap {
+  .page__inner-wrap,
+  .page__content {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
@@ -242,16 +246,25 @@
     float: none !important;
   }
 
-  /* 3. Menghilangkan Bingkai Kotak Web Agar Menyatu dengan Lembaran Kertas */
+  /* 4. hilangkan bingkai & margin ekstra pada kotak dokumen CV */
   .cv-document-box {
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
     background: transparent !important;
   }
 
-  /* 4. Mencegah Baris Terpotong Di Antara Halaman Cetak */
+  /* 5. Paksa tabel melebar penuh sesuai margin A4 baru */
+  .cv-document-box table {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 6. Mencegah pemotongan baris/tabel secara tidak rapi */
   tr,
   li {
     page-break-inside: avoid;
