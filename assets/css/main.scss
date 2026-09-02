@@ -278,3 +278,32 @@
     margin-top: 18px !important;
   }
 }
+
+/* ==========================================================================
+   FIX DARK MODE UNTUK HALAMAN CV INTERAKTIF
+   ========================================================================== */
+
+/* 1. Paksa warna teks pada Kotak Kontrol Filter CV agar tetap gelap */
+.cv-control-panel,
+.cv-control-panel *,
+.cv-control-panel label {
+  color: #222222 !important;
+}
+
+/* 2. Paksa warna teks pada Dokumen Lembar CV agar selalu gelap & terbaca */
+.cv-document-box,
+.cv-document-box * {
+  color: #222222 !important;
+}
+
+/* 3. Menjaga warna tautan/link di dalam CV tetap konsisten dan terlihat */
+.cv-document-box a {
+  color: #0366d6 !important;
+}
+
+/* 4. Menjaga teks keterangan sekunder (misal [Conference Paper], notes, dll) */
+.cv-document-box span,
+.cv-document-box small,
+.cv-document-box i {
+  color: #444444 !important;
+}
