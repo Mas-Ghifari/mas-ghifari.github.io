@@ -134,3 +134,132 @@
   display: none !important;
   content: "" !important;
 }
+
+/* ==========================================================================
+   STYLING LEMBARAN DOKUMEN CV & CETAK PDF
+   ========================================================================== */
+
+/* Tampilan Lembaran CV di Layar Web */
+.cv-document-box {
+  background: #ffffff !important;
+  color: #222222 !important;
+  padding: 35px 40px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Format Judul Seksi (Heading) Seperti Dokumen Formal */
+.cv-document-box h3 {
+  color: #111111 !important;
+  border-bottom: 2px solid #222222;
+  padding-bottom: 4px;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 1.05em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Style Tabel Dokumen CV */
+.cv-document-box table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.cv-document-box table th,
+.cv-document-box table td {
+  border: 1px solid #cccccc !important;
+  padding: 8px 10px !important;
+  color: #222222 !important;
+  font-size: 0.9em;
+  vertical-align: top;
+}
+
+.cv-document-box table th {
+  background-color: #f4f6f8 !important;
+  font-weight: bold;
+}
+
+/* Formats List di CV */
+.cv-document-box ul,
+.cv-document-box ol {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.cv-document-box li {
+  margin-bottom: 6px;
+  color: #222222 !important;
+  font-size: 0.92em;
+}
+
+/* ==========================================================================
+   ATURAN CETAK / PRINT PDF (@media print)
+   ========================================================================== */
+@media print {
+  /* 1. Sembunyikan elemen web yang tidak perlu dicetak */
+  .masthead,
+  .sidebar,
+  .page__footer,
+  .page__title,
+  .author__avatar,
+  .author__content,
+  .author__urls-wrapper,
+  .no-print,
+  button,
+  .btn {
+    display: none !important;
+  }
+
+  /* 2. Pengaturan Batas Kertas A4 */
+  @page {
+    margin: 1.5cm;
+    size: A4 portrait;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10.5pt !important;
+  }
+
+  #main,
+  .initial-content,
+  .archive,
+  .page,
+  .page__inner-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+  }
+
+  /* 3. Menghilangkan Bingkai Kotak Web Agar Menyatu dengan Lembaran Kertas */
+  .cv-document-box {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+
+  /* 4. Mencegah Baris Terpotong Di Antara Halaman Cetak */
+  tr,
+  li {
+    page-break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+    color: #000000 !important;
+  }
+}
