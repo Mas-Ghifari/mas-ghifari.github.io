@@ -379,16 +379,16 @@ ipr:
     status: "In Preparation"
     notes: "Rencana pendaftaran hak cipta untuk modul algoritma pemetaan talenta berbasis graf heterogen."
   
-invited_talks:
-  - year: "Nov 2025"
-    teaching_activity: "Visiting Lecturer: Teaching Big Data Analysis Course"
-    location: "Bukidnon State University, Philippines"
-  - year: "2025"
-    teaching_activity: "Narasumber Training of Trainers (ToT) Dasar-Dasar Artificial Intelligence"
-    location: "Yogyakarta, Indonesia"
-  - year: "2021"
-    teaching_activity: "Narasumber Workshop Pembuatan Media Ajar untuk Pembelajaran Daring kepada Guru TK ABA se-Tamantirto"
-    location: "Yogyakarta, Indonesia" 
+invited_lectures:
+  - date: "24 Nov 2025"
+    title: "Visiting Lecturer: Teaching Big Data Analysis Course"
+    institution: "Department of Information Technology, College of Technologies, Bukidnon State University, Philippines"
+  - date: "2025"
+    title: "Narasumber dalam Training of Trainers (ToT) Calon Pengajar Mata Kuliah Dasar-Dasar Artificial Intelligence"
+    institution: "Yogyakarta, Indonesia"
+  - date: "2021"
+    title: "Narasumber dalam Workshop Pembuatan Media Ajar untuk Pembelajaran Daring kepada Guru TK ABA se-Tamantirto"
+    institution: "Yogyakarta, Indonesia"
 
 regular_lectures:
   - course_title: "Database Management"
