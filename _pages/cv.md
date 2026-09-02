@@ -4,65 +4,79 @@ title: "Interactive Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 ---
+
 <style>
-  /* 1. Kunci background seluruh kotak kontrol & lembar CV agar tetap putih */
-  .cv-control-panel,
-  #cv-control-panel,
-  div[class*="cv-control"] {
-    background-color: #ffffff !important;
-    background: #ffffff !important;
+  /* 1. Paksa background kotak kontrol agar fleksibel & teksnya selalu kontras di Dark/Light Mode */
+  .cv-customizer-box {
+    background-color: var(--background-color, #f8f9fa) !important;
     border: 1px solid #d1d5db !important;
     padding: 20px !important;
     border-radius: 8px !important;
+    margin-bottom: 25px !important;
   }
 
-  /* 2. PAKSA SEMUA ELEMEN DI DALAM KOTAK KONTROL (termasuk label checkbox) BERWARNA GELAP */
-  .cv-control-panel *,
-  #cv-control-panel *,
-  div[class*="cv-control"] * {
-    color: #111827 !important; /* Warna hitam pekat */
-    -webkit-text-fill-color: #111827 !important; /* Mematikan override text dark mode */
-    opacity: 1 !important; /* Mencegah teks transparan/redup */
-    visibility: visible !important;
+  /* 2. Paksa Judul dan Label Checkbox Mengikuti Warna Teks Tema (Hitam saat Light, Putih/Terang saat Dark) */
+  .cv-customizer-box,
+  .cv-customizer-box h4,
+  .cv-customizer-box label,
+  .cv-customizer-box span {
+    color: var(--global-theme-color, inherit) !important;
+    opacity: 1 !important;
   }
 
-  /* 3. Khusus untuk input checkbox agar centang biru tetap berfungsi normal */
-  .cv-control-panel input[type="checkbox"],
-  #cv-control-panel input[type="checkbox"] {
-    -webkit-text-fill-color: initial !important;
-    accent-color: #0284c7 !important; /* Warna centang */
+  /* 3. Gaya Checkbox agar rapi */
+  .cv-customizer-box input[type="checkbox"] {
+    accent-color: #0284c7 !important;
+    margin-right: 6px !important;
     cursor: pointer !important;
   }
 
-  /* 4. Memastikan kertas lembar CV di bawahnya juga tetap putih & teks hitam */
-  .cv-document-box,
-  .cv-document-box * {
+  /* 4. Lembar Dokumen CV di Bawahnya Tetap Berbentuk Kertas Putih Bersih */
+  .cv-document-box {
     background-color: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+    padding: 30px !important;
+    border-radius: 6px !important;
+  }
+
+  .cv-document-box,
+  .cv-document-box *,
+  .cv-document-box h2,
+  .cv-document-box h3,
+  .cv-document-box p,
+  .cv-document-box li,
+  .cv-document-box td,
+  .cv-document-box th {
     color: #111827 !important;
     -webkit-text-fill-color: #111827 !important;
+  }
+
+  .cv-document-box a {
+    color: #0284c7 !important;
+    -webkit-text-fill-color: #0284c7 !important;
   }
 </style>
 
 <!-- Panel Kontrol Pilih Kategori (Sembunyi saat di-print) -->
-<div class="no-print" style="background: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; border-radius: 8px; margin-bottom: 25px;">
-  <h4 style="margin-top: 0; margin-bottom: 12px; color: #333;"><i class="fa-solid fa-sliders"></i> Customize Your CV Output:</h4>
+<div class="no-print cv-customizer-box">
+  <h4 style="margin-top: 0; margin-bottom: 12px;"><i class="fa-solid fa-sliders"></i> Customize Your CV Output:</h4>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 15px;">
     <label><input type="checkbox" id="chk-edu" checked onchange="toggleSection('sec-edu')"> Education Background</label>
     <label><input type="checkbox" id="chk-grants" checked onchange="toggleSection('sec-grants')"> Research Grants</label>
     <label><input type="checkbox" id="chk-pubs" checked onchange="toggleSection('sec-pubs')"> Publications</label>
     <label><input type="checkbox" id="chk-ipr" checked onchange="toggleSection('sec-ipr')"> Intellectual Property (IPR)</label>
-    <label><input type="checkbox" id="chk-talks" checked onchange="toggleSection('sec-talks')"> Invited Talks & Visiting</label>
-    <label><input type="checkbox" id="chk-lectures" checked onchange="toggleSection('sec-lectures')"> Regular Teaching Experience</label>
-    <label><input type="checkbox" id="chk-certs" checked onchange="toggleSection('sec-certs')"> Certifications</label>
-    <label><input type="checkbox" id="chk-orgs" checked onchange="toggleSection('sec-orgs')"> Professional Affiliations</label>
-    <label><input type="checkbox" id="chk-services" checked onchange="toggleSection('sec-services')"> Community Services</label>
+    <label><input type="checkbox" id="chk-talks" checked onchange="toggleSection('sec-teaching')"> Teaching & Invited Lectures</label>
+    <label><input type="checkbox" id="chk-certs" checked onchange="toggleSection('sec-certifications')"> Certifications</label>
+    <label><input type="checkbox" id="chk-orgs" checked onchange="toggleSection('sec-affiliations')"> Professional Affiliations</label>
+    <label><input type="checkbox" id="chk-services" checked onchange="toggleSection('sec-community')"> Community Services</label>
   </div>
 
   <button onclick="window.print()" class="btn btn--primary btn--large">
     <i class="fa-solid fa-file-pdf"></i> Download Selected CV (PDF)
   </button>
 </div>
+
 
 <!-- Lembaran Dokumen CV -->
 <div class="cv-document-box">
