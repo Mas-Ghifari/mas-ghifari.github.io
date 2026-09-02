@@ -111,12 +111,25 @@ author_profile: true
 
   <!-- Section: Education -->
   <div id="sec-edu" class="cv-section">
-    <h3>EDUCATION BACKGROUND</h3>
-    <ul>
-      {% for item in site.data.portfolio.education %}
-      <li><b>{{ item.degree }}</b> &mdash; {{ item.institution }} ({{ item.year }})</li>
-      {% endfor %}
-    </ul>
+    <h3 style="margin-top: 20px;">EDUCATION BACKGROUND</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 15%; text-align: center;">Year</th>
+          <th>Degree / Major</th>
+          <th>Institution / Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in site.data.portfolio.education %}
+        <tr>
+          <td style="text-align: center;">{{ item.year }}</td>
+          <td><b>{{ item.degree }}</b></td>
+          <td>{{ item.institution }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
   <!-- Section: Research Grants -->
@@ -173,16 +186,31 @@ author_profile: true
   <!-- Section: IPR -->
   <div id="sec-ipr" class="cv-section">
     <h3 style="margin-top: 20px;">INTELLECTUAL PROPERTY RIGHTS (IPR)</h3>
-    <ul>
-      {% for item in site.data.portfolio.ipr %}
-        {% if item.type != "Draft / Planned" %}
-        <li><b>{{ item.type }}</b>: {{ item.title }} (Reg No: {{ item.number }}{% if item.year %}, {{ item.year }}{% endif %})</li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 15%; text-align: center;">Year</th>
+          <th>Title / Subject</th>
+          <th style="width: 20%;">Type</th>
+          <th style="width: 25%;">Registration No.</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in site.data.portfolio.ipr %}
+          {% if item.type != "Draft / Planned" %}
+          <tr>
+            <td style="text-align: center;">{% if item.year %}{{ item.year }}{% else %}-{% endif %}</td>
+            <td><b>{{ item.title }}</b></td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.number }}</td>
+          </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
-  <!-- Section: Regular Teaching Experience (Format Tabel) -->
+  <!-- Section: Regular Teaching Experience -->
   <div id="sec-lectures" class="cv-section">
     <h3 style="margin-top: 20px;">REGULAR TEACHING EXPERIENCE</h3>
     <table>
@@ -207,7 +235,7 @@ author_profile: true
     </table>
   </div>
 
-  <!-- Section 2: Invited Lectures & Visiting Professorships (Format List) -->
+  <!-- Section: Invited Lectures & Visiting Professorships (Format List) -->
   <div id="sec-talks" class="cv-section">
     <h3 style="margin-top: 20px;">INVITED LECTURES & VISITING PROFESSORSHIPS</h3>
     <ul>
@@ -223,26 +251,55 @@ author_profile: true
   <!-- Section: Certifications -->
   <div id="sec-certifications" class="cv-section">
     <h3 style="margin-top: 20px;">PROFESSIONAL CERTIFICATIONS</h3>
-    <ul>
-      {% for item in site.data.portfolio.certifications %}
-      <li>
-        <b>{{ item.title }}</b> &mdash; {{ item.provider }} ({{ item.year }})
-        {% if item.url and item.url != "" %}
-          [<a href="{{ item.url }}" target="_blank">Certificate</a>]
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 15%; text-align: center;">Year</th>
+          <th>Certification Title</th>
+          <th style="width: 25%;">Provider</th>
+          <th style="width: 18%; text-align: center;">Certificate</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in site.data.portfolio.certifications %}
+        <tr>
+          <td style="text-align: center;">{{ item.year }}</td>
+          <td><b>{{ item.title }}</b></td>
+          <td>{{ item.provider }}</td>
+          <td style="text-align: center;">
+            {% if item.url and item.url != "" %}
+              <a href="{{ item.url }}" target="_blank">View Certificate</a>
+            {% else %}
+              -
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
   <!-- Section: Professional Affiliations -->
   <div id="sec-affiliations" class="cv-section">
-    <h3 style="margin-top: 20px;">PROFESSIONAL AFFILIATIONS</h3>
-    <ul>
-      {% for item in site.data.portfolio.organizations %}
-      <li><b>{{ item.name }}</b> &mdash; {{ item.role }} ({{ item.level }}) [{{ item.period }}]</li>
-      {% endfor %}
-    </ul>
+    <h3 style="margin-top: 20px;">PROFESSIONAL AFFILIATIONS & MEMBERSHIPS</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%; text-align: center;">Period</th>
+          <th>Organization Name</th>
+          <th style="width: 25%;">Position / Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in site.data.portfolio.organizations %}
+        <tr>
+          <td style="text-align: center;">{{ item.period }}</td>
+          <td><b>{{ item.name }}</b></td>
+          <td>{{ item.role }} ({{ item.level }})</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 
   <!-- Section: Community Services -->
