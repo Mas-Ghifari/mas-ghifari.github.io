@@ -117,7 +117,7 @@ author_profile: true
         <tr>
           <th style="width: 15%; text-align: center;">Year</th>
           <th>Degree / Major</th>
-          <th>Institution / Country</th>
+          <th>Institution</th>
         </tr>
       </thead>
       <tbody>
