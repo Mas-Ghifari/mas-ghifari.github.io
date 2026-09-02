@@ -204,7 +204,7 @@
    ATURAN CETAK / PRINT PDF (@media print)
    ========================================================================== */
 @media print {
-  /* 1. Sembunyikan semua elemen navigasi & layout web */
+  /* 1. Sembunyikan elemen web yang tidak perlu */
   .masthead,
   .sidebar,
   .page__footer,
@@ -218,10 +218,10 @@
     display: none !important;
   }
 
-  /* 2. Pengaturan Margin Kertas A4 (Dikecilkan agar tidak terlalu menjorok) */
+  /* 2. Pengaturan Batas Kertas */
   @page {
-    margin: 1.2cm 1.5cm !important;
     size: A4 portrait;
+    margin: 0 !important; /* Nol-kan margin luar agar dikontrol penuh oleh padding */
   }
 
   body {
@@ -232,7 +232,7 @@
     padding: 0 !important;
   }
 
-  /* 3. Paksa semua container halaman melebar 100% penuh tanpa padding bawaan tema */
+  /* 3. Paksa container halaman bersih dari padding berlebih bawaan tema */
   #main,
   .initial-content,
   .archive,
@@ -246,32 +246,30 @@
     float: none !important;
   }
 
-  /* 4. hilangkan bingkai & margin ekstra pada kotak dokumen CV */
+  /* 4. MEMBERIKAN MARGIN TEKS INTERNAL (Memastikan Teks Tidak Mepet Tepi) */
   .cv-document-box {
     border: none !important;
     box-shadow: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 20mm 18mm !important; /* Memberikan margin teks atas-bawah 20mm, kiri-kanan 18mm */
+    margin: 0 auto !important;
     width: 100% !important;
-    max-width: 100% !important;
+    box-sizing: border-box !important;
     background: transparent !important;
   }
 
-  /* 5. Paksa tabel melebar penuh sesuai margin A4 baru */
+  /* 5. Tabel Melebar Rapi di Dalam Jangkauan Margin */
   .cv-document-box table {
     width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
 
-  /* 6. Mencegah pemotongan baris/tabel secara tidak rapi */
-  tr,
-  li {
+  /* 6. Mencegah Baris Terpotong Di Antara Halaman */
+  tr, li {
     page-break-inside: avoid;
   }
 
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid;
     color: #000000 !important;
   }
