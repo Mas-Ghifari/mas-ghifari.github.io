@@ -1,8 +1,11 @@
 ---
 layout: single
 title: "Interactive Curriculum Vitae"
+excerpt: "Online Curriculum Vitae of Dr. Nasy'an Taufiq Al Ghifari - Assistant Professor in Computer Science and Data Mining Expert at Universitas Muhammadiyah Yogyakarta."
 permalink: /cv/
 author_profile: true
+header:
+  og_image: /assets/images/cv-preview.png # (Opsional) Tambahkan gambar preview jika ada
 ---
 
 <style>
