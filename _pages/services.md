@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Services"
+title: "Services & Certifications"
 permalink: /services/
 author_profile: true
 ---
