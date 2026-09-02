@@ -280,43 +280,59 @@
 }
 
 /* ==========================================================================
-   FIX HARDCODE LIGHT CONTAINER UNTUK KOTAK FILTER CV (DARK MODE FRIENDLY)
+   FORCE FIX DARK MODE SPECIFICITY UNTUK PANEL CV & DOKUMEN CV
    ========================================================================== */
 
-/* 1. Kunci background kotak kontrol agar SELALU putih/terang di mode apa pun */
-.cv-control-panel,
-div[class*="cv-control"],
-.cv-control-panel-wrapper {
-  background-color: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 8px !important;
-  padding: 20px !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
-}
+/* Target SEMUA kondisi dark mode (html/body dengan class/data-theme dark) */
+html,
+body,
+body.dark-mode,
+body[data-theme="dark"],
+html[data-theme="dark"],
+.dark-theme,
+.theme-dark {
 
-/* 2. Kunci SEMUA teks & label di dalam kotak kontrol agar SELALU gelap */
-.cv-control-panel,
-.cv-control-panel *,
-.cv-control-panel label,
-.cv-control-panel span,
-.cv-control-panel p,
-.cv-control-panel div,
-.cv-control-panel input + label {
-  color: #1e293b !important; /* Warna teks abu gelap tajam */
-  opacity: 1 !important;
-}
+  /* 1. Paksa Kotak Kontrol CV Tetap Berlatar Putih dan Teks Gelap */
+  .cv-control-panel,
+  div[class*="cv-control"] {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+  }
 
-/* 3. Kunci juga dokumen lembar CV di bawahnya agar tetap seperti kertas putih */
-.cv-document-box {
-  background-color: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
-}
+  .cv-control-panel *,
+  .cv-control-panel label,
+  .cv-control-panel span,
+  .cv-control-panel p,
+  .cv-control-panel input,
+  .cv-control-panel input + label {
+    color: #111827 !important; /* Warna hitam pekat tajam */
+    opacity: 1 !important;
+    -webkit-text-fill-color: #111827 !important; /* Mencegah override browser/Safari */
+  }
 
-.cv-document-box,
-.cv-document-box * {
-  color: #1e293b !important;
-}
+  /* 2. Paksa Dokumen Lembar CV Tetap Berlatar Putih dan Teks Gelap */
+  .cv-document-box {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+  }
 
-.cv-document-box a {
-  color: #0284c7 !important;
+  .cv-document-box,
+  .cv-document-box *,
+  .cv-document-box p,
+  .cv-document-box li,
+  .cv-document-box td,
+  .cv-document-box th,
+  .cv-document-box h1,
+  .cv-document-box h2,
+  .cv-document-box h3 {
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+  }
+
+  .cv-document-box a {
+    color: #0284c7 !important;
+    -webkit-text-fill-color: #0284c7 !important;
+  }
 }
