@@ -15,63 +15,74 @@ author_profile: true
 
 <h3>Manuscript under review</h3>
 <ul>
-  <li>Wibowo, G. P. A., <b>Al Ghifari, N. T.^</b>, Daulay, N. A., “Revealing Hidden Deforestation through Multitemporal Trajectory Analysis and Spatial Clustering: Case Study of Northern Sumatera”, submitted to <i>Journal of Engineering and Technology for Industrial Applications</i> (CiteScore: 0.8).</li>
-  <li><b>Al Ghifari, N. T.^</b>, Al-Rasyid, A. H., Andriansyah, Y. D., “Improving Fake News Detection Interpretability: From Subword Attention to Word Explanations”, submitted to <i>International Journal of Artificial Intelligence</i> (CiteScore: 2.9).</li>
-  <li><b>Ghif, N. T.^</b> and Putri, I. A., “Uncovering Structural Daily Load Profiles in Household Energy Consumption using Graph-Based Community Detection”, submitted to <i>Jurnal ELTIKOM: Jurnal Teknik Elektro, Teknologi Informasi dan Komputer</i>.</li>
-  <li>Luthfiah, L. and <b>Al Ghifari, N. T.^</b>, “Uncovering Latent Community Structures in Global Aircraft Accident Networks Using Similarity-Based Graph Clustering”, submitted to <i>Jurnal Nasional Teknik Elektro dan Teknologi Informasi </i>.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Nurwanto, Andrianie, P. S., “DHCD-iLEAM: Incremental Dynamic Heterogeneous Community Detection via Local Exploration and Adaptive Merging”, submitted to <i>Computer Science Journal </i> (CiteScore: 1.6).</li>
-  <li>Citra, M. B., <b>Al Ghifari, N. T.^</b>, Irfan, A. A. A., “A Human-Validated Benchmark and Audit of Automatic Supervision for Indonesian Aspect-Based Sentiment Analysis”, submitted to <i>Discover Artificial Intelligence </i> (CiteScore: 6.0).</li>
-  <li><b>Al Ghifari, N. T.^</b> and Al Hakim, H. B., “A Systematic Evaluation Framework for Daily Air Quality Prediction in Jakarta”, submitted to <i>Engineering Applications of Artificial Intelligence </i> (CiteScore: 11.7).</li>
-  <li><b>Ghif, N. T.^</b>, Habiby, W. N., Wiyono, G., and Syahida, H. K., “Heterogeneous Community Detection with Local Exploration and Adaptive Merging”, submitted to <i>Social Network Analysis and Mining</i> (CiteScore: 6.4).</li>
-  <li>Furji, Riyadi, S.^, Damarjati, C., <b>Al Ghifari, N. T.</b>, Andi, T., Wenang, S., Yuliansyah, H., Nguyen, T. T., “Transfer Learning using DenseNet201 for Web-Based Histopathological Image Detection of Malignant Lymphoma”, submitted to <i>International Journal of Computing and Digital Systems</i> (CiteScore: 3.2).</li>
+{% for item in site.data.portfolio.publications %}
+  {% if item.type == "Manuscript Under Review" %}
+    <li>
+      {{ item.authors }}, "{{ item.title }}", submitted to <i>{{ item.venue }}</i>{% if item.notes %} ({{ item.notes }}){% endif %}.
+    </li>
+  {% endif %}
+{% endfor %}
 </ul>
 
 <h3>Published articles in international journal (indexed by Scopus and/or Web of Science)</h3>
 <ul>
-  <li><b>Al Ghifari, N. T.^</b>, Saptawati, G. A. P., Khodra, M. L., and Sitohang, B., “<a href="https://doi.org/10.5614/itbj.ict.res.appl.2023.17.2.7" target="_blank">The Evaluation of DyHATR Performance for Dynamic Heterogeneous Graphs</a>”, <i>Journal of ICT Research & Applications</i>, Vol. 17, No. 2, pp. 231, 2023.</li>
-  <li>Jati, A. N.^, Saputra, R. E., Nurcahyadi, M. G., and <b>Al Ghifari, N. T.</b>, “<a href="http://doi.org/10.11591/ijece.v8i6.pp5098-5106" target="_blank">A Multi-robot System Coordination Design and Analysis on Wall Follower Robot Group</a>”, <i>International Journal of Electrical & Computer Engineering</i>, Vol. 8, No. 6, 2018.</li>
+{% for item in site.data.portfolio.publications %}
+  {% if item.type == "International Journal" %}
+    <li>
+      {{ item.authors }}, 
+      "
+      {% if item.doi %}
+        <a href="{{ item.doi }}" target="_blank">{{ item.title }}</a>
+      {% elsif item.url %}
+        <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+      {% else %}
+        {{ item.title }}
+      {% endif %}
+      ", 
+      <i>{{ item.venue }}</i>{% if item.volume %}, Vol. {{ item.volume }}{% endif %}{% if item.number %}, No. {{ item.number }}{% endif %}{% if item.pages %}, pp. {{ item.pages }}{% endif %}, {{ item.year }}.
+    </li>
+  {% endif %}
+{% endfor %}
 </ul>
 
 <h3>Published articles in national journal (indexed by Sinta)</h3>
 <ul>
-  <li>Al Hakim, H. B. and <b>Al Ghifari, N. T.^</b>, “Daily Rainfall Prediction and Intensity Classification in Sleman Regency Using Random Forest Regressor”, <i>Jurnal Teknik Informatika</i>, Vol. 7, No. 5, 2026.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Ramdhani, L. A., and Riyadi, S., “<a href="https://journal.uir.ac.id/index.php/ITJRD/article/view/21431" target="_blank">DBCE: Dynamic Bipartite Contextual Embedding for Predicting National Science Olympiad Winners</a>”, <i>IT Journal Research and Development</i>, Vol. 10, No. 2, pp. 78-92, 2025.</li>
-  <li><b>Al Ghifari, N. T.^</b> and Wibowo, D. A., “<a href="https://journal.umy.ac.id/index.php/eist/article/view/28415" target="_blank">A Data-Driven Framework for Analyzing Popularity of Indian Film Adaptations Using K-Means and Random Forest</a>”, <i>Emerging Information Science and Technology</i>, Vol. 6, No. 2, pp. 54-62, 2025.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Sitohang, B., and Saptawati, G. A. P., “<a href="https://doi.org/10.25299/itjrd.2021.vol6(1).6118" target="_blank">Addressing Cold Start New User in Recommender System Based on Hybrid Approach: A review and bibliometric analysis</a>”, <i>IT Journal Research and Development</i>, Vol. 6, No. 1, pp. 1-16, 2021.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Surawijaya, A., Arifiansyah, F., Komarudin, A., Nugroho, D. H. T., and Mahayana, D., “<a href="https://doi.org/10.26555/jifo.v15i1.a18951" target="_blank">Reality of the Internet and social media addiction in Indonesian students</a>”, <i>Jurnal Informatika</i>, Vol. 15, No. 1, pp. 1-16, 2021.</li>
+{% for item in site.data.portfolio.publications %}
+  {% if item.type == "National Journal" %}
+    <li>
+      {{ item.authors }}, 
+      "
+      {% if item.doi %}
+        <a href="{{ item.doi }}" target="_blank">{{ item.title }}</a>
+      {% elsif item.url %}
+        <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+      {% else %}
+        {{ item.title }}
+      {% endif %}
+      ", 
+      <i>{{ item.venue }}</i>{% if item.volume %}, Vol. {{ item.volume }}{% endif %}{% if item.number %}, No. {{ item.number }}{% endif %}{% if item.pages %}, pp. {{ item.pages }}{% endif %}, {{ item.year }}.
+    </li>
+  {% endif %}
+{% endfor %}
 </ul>
 
 <h2>Conference papers</h2>
 
-<h3>2026</h3>
 <ul>
-  <li><b>Al Ghifari, N. T.^</b>, Putri, I. A., Putry, D. K., Rausyanfikri, D. N., Ulinnuha, N. A., and Huda, M. F., “A Comparative Performance Analysis of YOLOv5 and YOLOv8 on Raspberry Pi 4 and 5 Platforms for Edge Intelligence-Based Real-Time Pest Monitoring”, in <i>International Conference on Information Technology and Computing (ICITCOM)</i>, pp. 1-6, 2026.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Sasongko, L. R. R., Rachmadi, A. Y., Rausyanfikri, D. N., Ulinnuha, N. A., and Wiyono, G., “Performance and Security Optimization of IoT-Based Precision Irrigation via Hybrid HTTP-WebSocket Architecture”, in <i>5th International Conference on Electronic and Electrical Engineering and Intelligent System (ICE3IS)</i>, pp. 1-6, 2026.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Olivia, N., Bayu, F. V., and Rahmah, A. J., “A Comparative Usability Evaluation of Semi-Automated and Automated Digital Library Cataloging Interfaces”, in <i>International Conference on Information Technology and Computing (ICITCOM)</i>, pp. 1-6, 2026.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Tjappe, A. F. P. Y., and Adriano, F. B., “A Comparative Study of Supervised, Anomaly-Based, and Ensemble Learning Approaches for Credit Card Fraud Detection Under Extreme Class Imbalance”, in <i>4th IEEE International Conference on Artificial Intelligence and Mechatronics Systems 2026 (AIMS)</i>, pp. 1-6, 2026.</li>
-  <li><b>Al Ghifari, N. T.^</b>, Dhafa, M., and Arifah, L., “Exploring Health Biomarker Patterns Using Clustering and Post-Clustering Analysis of Smoking Status”, in <i>Bioinformatics, Biomedical Engineering, and Biotechnology Exploring New Frontiers in Healthcare 2026 (BIOXPLORE)</i>, pp. 1-6, 2026.</li>
-  <li><b>Al Ghifari, N. T.^</b> and Rohman, E. A., “<a href="https://ieeexplore.ieee.org/document/11664749/" target="_blank">Modeling the Dynamics of Food Security Index Growth Using District-Level Panel Data: Evidence from Indonesia</a>”, in <i>14th International Conference on Information and Communication Technology (ICoICT)</i>, pp. 1-6, 2026.</li>
-  <li>Azmi, A. A., <b>Al Ghifari, N. T.^</b>, Ramdhani, L. A., and Khilmiyah, A., “<a href="https://doi.org/10.1109/SIML69834.2026.11621519" target="_blank">A Linguistic Structure-Based Short Answer Automatic Scoring System for Indonesian</a>”, in <i>2026 International Conference on Smart Computing, IoT, and Machine Learning (SIML)</i>, pp. 1-6, 2026.</li>
-  <li>Citra, M. B. and <b>Al Ghifari, N. T.^</b>, “<a href="https://doi.org/10.1109/SIML69834.2026.11621828" target="_blank">Fine-Grained Aspect-Based Sentiment Analysis on Indonesian E-Commerce Reviews Using Multi-Task Learning with Pretrained Transformer Models</a>”, in <i>2026 International Conference on Smart Computing, IoT, and Machine Learning (SIML)</i>, pp. 1-6, 2026.</li>
-  <li><b>Al Ghifari, N. T.^</b> and Maharani, P. H. D., “<a href="https://doi.org/10.1109/SIML69834.2026.11621256" target="_blank">Analysis of Trends and Factors Associated with the Increase in Food Loss Using FAO Data-Based Machine Learning Approach: A Case Study of Cameroon</a>”, in <i>2026 International Conference on Smart Computing, IoT, and Machine Learning (SIML)</i>, pp. 1-6, 2026.</li>
-</ul>
-
-<h3>2025</h3>
-<ul>
-  <li>Agsi, B. D., Riyadi, S.^, <b>Al Ghifari, N. T.</b>, Nisa, K., and Aziz, Q., “<a href="https://doi.org/10.1109/SIML65326.2025.11081116" target="_blank">Early Detection of Diabetes: Comparison of Inception, VGG16 and VGG19 Model</a>”, in <i>2025 International Conference on Smart Computing, IoT and Machine Learning (SIML)</i>, pp. 1-6, 2025.</li>
-  <li><b>Al Ghifari, N. T.^</b> and Hanafi, A., “<a href="https://doi.org/10.1109/ICITCOM66635.2025.11265721" target="_blank">Typology of Offensive Play Styles in UEFA Champions League: A Machine Learning-Based Clustering Study</a>”, in <i>2025 International Conference on Information Technology and Computing (ICITCOM)</i>, pp. 275-279, 2025.</li>
-  <li><b>Al Ghifari, N. T.^</b> and Rahmadi, M. A. F., “<a href="https://ieeexplore.ieee.org/document/11265666" target="_blank">Predicting Internet Penetration in Indonesia Using XGBoost Regressor Based on Socioeconomic and Infrastructure Factors</a>”, in <i>2025 International Conference on Information Technology and Computing (ICITCOM)</i>, pp. 445-450, 2025.</li>
-  <li>Riyadi, S.^, Chairani, I. T., Hariadi, T. K., Andriyani, A. D., and <b>Al-Ghifari, N. T.</b>, “<a href="https://doi.org/10.1109/ICE3IS66769.2025.11280895" target="_blank">Implementation of Deep Learning for Breast Cancer Detection: A Systematic Literature Review</a>”, in <i>2025 5th International Conference on Electronic and Electrical Engineering and Intelligent System (ICE3IS)</i>, pp. 401-406, 2025.</li>
-  <li>Andriansyah, Y. D. and <b>Al Ghifari, N. T.^</b>, “<a href="https://ieeexplore.ieee.org/document/11265708" target="_blank">Investigating the Limitation of Technical-Based Multivariate Time Series Modeling in Predicting Bitcoin Prices: A Case for Incorporating Exogenous Features</a>”, in <i>2025 International Conference on Information Technology and Computing (ICITCOM)</i>, pp. 1-6, 2025.</li>
-  <li>Putra, A. A., Septiyanto, A., Ramadhan, H. W., Setyawan, H., and <b>Al Ghifari, N. T.^</b>, “<a href="https://doi.org/10.1109/ICITCOM66635.2025.11265215" target="_blank">Smartphone-Based Tilapia Pond Water Quality Monitoring</a>”, in <i>2025 International Conference on Information Technology and Computing (ICITCOM)</i>, pp. 368-372, 2025.</li>
-</ul>
-
-<h3>2020</h3>
-<ul>
-  <li><b>Al Ghifari, N. T.^</b>, Prihatmanto, A. S., Wijaya, R., and Yusuf, R., “<a href="https://doi.org/10.1109/ICoSTA48221.2020.1570613756" target="_blank">Data Quality Measures and Data Cleaning for Pattern Analysis Angkot Transportation in Bandung City</a>”, in <i>2020 International Conference on Smart Technology and Applications (ICoSTA)</i>, pp. 1-7, 2020.</li>
-</ul>
-
-<h3>2017</h3>
-<ul>
-  <li><b>Al Ghifari, N. T.^</b>, Jati, A. N., and Saputra, R. E., “<a href="https://doi.org/10.1109/ICA.2017.8068420" target="_blank">Coordination control for simple autonomous mobile robot</a>”, in <i>2017 5th International Conference on Instrumentation, Control, and Automation (ICA)</i>, pp. 93-98, 2017.</li>
+{% for item in site.data.portfolio.publications %}
+  {% if item.type == "Conference Paper" %}
+    <li>
+      {{ item.authors }}, 
+      "
+      {% if item.doi %}
+        <a href="{{ item.doi }}" target="_blank">{{ item.title }}</a>
+      {% elsif item.url %}
+        <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+      {% else %}
+        {{ item.title }}
+      {% endif %}
+      ", in <i>{{ item.venue }}</i>{% if item.pages %}, pp. {{ item.pages }}{% endif %}, {{ item.year }}.
+    </li>
+  {% endif %}
+{% endfor %}
 </ul>
