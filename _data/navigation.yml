@@ -31,8 +31,8 @@ main:
   - title: "Services"
     url: /services/
 
-  - title: "Courses"
-    url: /courses/
+  #- title: "Courses"
+  #  url: /courses/
 
   - title: "CV"
     url: /cv/
