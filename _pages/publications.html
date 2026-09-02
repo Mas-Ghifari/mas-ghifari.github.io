@@ -17,8 +17,23 @@ author_profile: true
 <ul>
 {% for item in site.data.portfolio.publications %}
   {% if item.type == "Manuscript Under Review" %}
+    {% assign formatted_authors = item.authors %}
+    
+    {% comment %} 1. Beri tanda ^ jika ada corresponding_author khusus {% endcomment %}
+    {% if item.corresponding_author %}
+      {% assign corr_target = item.corresponding_author %}
+      {% assign corr_replacement = item.corresponding_author | append: "^" %}
+      {% assign formatted_authors = formatted_authors | replace: corr_target, corr_replacement %}
+    {% endif %}
+
+    {% comment %} 2. Cetak tebal semua variasi nama Anda {% endcomment %}
+    {% assign formatted_authors = formatted_authors 
+      | replace: "Al Ghifari, N. T.", "<b>Al Ghifari, N. T.</b>" 
+      | replace: "Ghif, N. T.", "<b>Ghif, N. T.</b>" 
+      | replace: "Al-Ghifari, N. T.", "<b>Al-Ghifari, N. T.</b>" %}
+
     <li>
-      {{ item.authors }}, "{{ item.title }}", submitted to <i>{{ item.venue }}</i>{% if item.notes %} ({{ item.notes }}){% endif %}.
+      {{ formatted_authors }}, "{{ item.title }}", submitted to <i>{{ item.venue }}</i>{% if item.notes %} ({{ item.notes }}){% endif %}.
     </li>
   {% endif %}
 {% endfor %}
@@ -28,8 +43,21 @@ author_profile: true
 <ul>
 {% for item in site.data.portfolio.publications %}
   {% if item.type == "International Journal" %}
+    {% assign formatted_authors = item.authors %}
+    
+    {% if item.corresponding_author %}
+      {% assign corr_target = item.corresponding_author %}
+      {% assign corr_replacement = item.corresponding_author | append: "^" %}
+      {% assign formatted_authors = formatted_authors | replace: corr_target, corr_replacement %}
+    {% endif %}
+
+    {% assign formatted_authors = formatted_authors 
+      | replace: "Al Ghifari, N. T.", "<b>Al Ghifari, N. T.</b>" 
+      | replace: "Ghif, N. T.", "<b>Ghif, N. T.</b>" 
+      | replace: "Al-Ghifari, N. T.", "<b>Al-Ghifari, N. T.</b>" %}
+
     <li>
-      {{ item.authors }}, 
+      {{ formatted_authors }}, 
       "
       {% if item.doi %}
         <a href="{{ item.doi }}" target="_blank">{{ item.title }}</a>
@@ -49,8 +77,21 @@ author_profile: true
 <ul>
 {% for item in site.data.portfolio.publications %}
   {% if item.type == "National Journal" %}
+    {% assign formatted_authors = item.authors %}
+    
+    {% if item.corresponding_author %}
+      {% assign corr_target = item.corresponding_author %}
+      {% assign corr_replacement = item.corresponding_author | append: "^" %}
+      {% assign formatted_authors = formatted_authors | replace: corr_target, corr_replacement %}
+    {% endif %}
+
+    {% assign formatted_authors = formatted_authors 
+      | replace: "Al Ghifari, N. T.", "<b>Al Ghifari, N. T.</b>" 
+      | replace: "Ghif, N. T.", "<b>Ghif, N. T.</b>" 
+      | replace: "Al-Ghifari, N. T.", "<b>Al-Ghifari, N. T.</b>" %}
+
     <li>
-      {{ item.authors }}, 
+      {{ formatted_authors }}, 
       "
       {% if item.doi %}
         <a href="{{ item.doi }}" target="_blank">{{ item.title }}</a>
@@ -71,8 +112,21 @@ author_profile: true
 <ul>
 {% for item in site.data.portfolio.publications %}
   {% if item.type == "Conference Paper" %}
+    {% assign formatted_authors = item.authors %}
+    
+    {% if item.corresponding_author %}
+      {% assign corr_target = item.corresponding_author %}
+      {% assign corr_replacement = item.corresponding_author | append: "^" %}
+      {% assign formatted_authors = formatted_authors | replace: corr_target, corr_replacement %}
+    {% endif %}
+
+    {% assign formatted_authors = formatted_authors 
+      | replace: "Al Ghifari, N. T.", "<b>Al Ghifari, N. T.</b>" 
+      | replace: "Ghif, N. T.", "<b>Ghif, N. T.</b>" 
+      | replace: "Al-Ghifari, N. T.", "<b>Al-Ghifari, N. T.</b>" %}
+
     <li>
-      {{ item.authors }}, 
+      {{ formatted_authors }}, 
       "
       {% if item.doi %}
         <a href="{{ item.doi }}" target="_blank">{{ item.title }}</a>
