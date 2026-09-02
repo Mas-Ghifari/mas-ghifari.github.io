@@ -346,19 +346,35 @@ ipr:
     type: "Copyright"
     title: "SIMPAN JAMU: Web-Based School Quality Assurance Information System to Support SPMI Implementation in Vocational High Schools."
     number: "EC002026057227"
+    date: "30 April 2026"
   - year: 2026
     type: "Copyright"
     title: "Vitis-SmartFlow: An IoT-Integrated Irrigation Management Platform for Optimal Water Efficiency in Grape Cultivation."
     number: "EC002026030237"
+    date: "21 February 2026"
   - year: 2026
     type: "Copyright"
     title: "VisionAgri-Pi: Real-Time Crop Pest Early Warning System Based on Deep Learning Using the YOLO Algorithm Implemented on a Raspberry Pi Embedded System."
     number: "EC002026030234"
+    date: "21 February 2026"
   - year: 2025
-    type: "Patent (Submitted)"
+    type: "Patent"
     title: "METODE YANG DIIMPLEMENTASIKAN KOMPUTER UNTUK MENDETEKSI KOMUNITAS PADA GRAF HETEROGEN"
     number: "S00202506901"
-
+    date: "24 July 2025"
+    notes: "Patent application under substantive examination by DJKI."
+  # CALON PRODUK / DRAFT HKI YANG DIKOMENTARI:
+  - year: 2026
+    type: "Draft / Planned"
+    title: "SafeZone Digital: An Inclusive Web Platform for Anonymous Harassment Reporting and Comprehensive Psycho-Social Support"
+    status: "In Preparation"
+    notes: "Calon produk sistem pelaporan anonim. Saat ini sedang dalam tahap uji coba modul perlindungan data pribadi sebelum diajukan HKI."
+  - year: 2026
+    type: "Draft / Planned"
+    title: "HCD-LEAM-Talent: Heterogeneous Community Detection with Local Exploration and Adaptive Merging for Talent Mapping"
+    status: "In Preparation"
+    notes: "Rencana pendaftaran hak cipta untuk modul algoritma pemetaan talenta berbasis graf heterogen."
+  
 invited_talks:
   - year: "Nov 2025"
     teaching_activity: "Visiting Lecturer: Teaching Big Data Analysis Course"
