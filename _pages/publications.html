@@ -19,14 +19,12 @@ author_profile: true
   {% if item.type == "Manuscript Under Review" %}
     {% assign formatted_authors = item.authors %}
     
-    {% comment %} 1. Beri tanda ^ jika ada corresponding_author khusus {% endcomment %}
     {% if item.corresponding_author %}
       {% assign corr_target = item.corresponding_author %}
       {% assign corr_replacement = item.corresponding_author | append: "^" %}
       {% assign formatted_authors = formatted_authors | replace: corr_target, corr_replacement %}
     {% endif %}
 
-    {% comment %} 2. Cetak tebal semua variasi nama Anda {% endcomment %}
     {% assign formatted_authors = formatted_authors 
       | replace: "Al Ghifari, N. T.", "<b>Al Ghifari, N. T.</b>" 
       | replace: "Ghif, N. T.", "<b>Ghif, N. T.</b>" 
@@ -109,9 +107,14 @@ author_profile: true
 
 <h2>Conference papers</h2>
 
-<ul>
-{% for item in site.data.portfolio.publications %}
-  {% if item.type == "Conference Paper" %}
+{% comment %} Filter khusus Conference Paper lalu dikelompokkan berdasarkan Tahun (Urut dari terbaru) {% endcomment %}
+{% assign conf_papers = site.data.portfolio.publications | where: "type", "Conference Paper" %}
+{% assign conf_by_year = conf_papers | group_by: "year" | sort: "name" | reverse %}
+
+{% for year_group in conf_by_year %}
+  <h3>{{ year_group.name }}</h3>
+  <ul>
+  {% for item in year_group.items %}
     {% assign formatted_authors = item.authors %}
     
     {% if item.corresponding_author %}
@@ -137,6 +140,6 @@ author_profile: true
       {% endif %}
       ", in <i>{{ item.venue }}</i>{% if item.pages %}, pp. {{ item.pages }}{% endif %}, {{ item.year }}.
     </li>
-  {% endif %}
+  {% endfor %}
+  </ul>
 {% endfor %}
-</ul>
