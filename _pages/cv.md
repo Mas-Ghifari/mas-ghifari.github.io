@@ -54,7 +54,8 @@ author_profile: true
         <tr><th style="width: 12%;">Year</th><th>Research Title</th><th style="width: 20%;">Funder</th></tr>
       </thead>
       <tbody>
-        {% for item in site.data.portfolio.grants %}
+        {% assign sorted_grants = site.data.portfolio.grants | sort: "year" | reverse %}
+        {% for item in sorted_grants limit: 20 %}
         <tr>
           <td style="text-align: center;">{{ item.year }}</td>
           <td>{{ item.title }} <i>({{ item.role }})</i></td>
@@ -64,7 +65,7 @@ author_profile: true
       </tbody>
     </table>
   </div>
-
+  
   <!-- Section: Publications -->
   <div id="sec-pubs" class="cv-section">
     <h3 style="margin-top: 20px;">PUBLICATIONS</h3>
