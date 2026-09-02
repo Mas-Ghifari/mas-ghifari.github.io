@@ -3,6 +3,7 @@ layout: single
 title: "Courses & Certifications"
 permalink: /courses/
 author_profile: true
+published: false
 ---
 
 Below is the list of professional certifications and scientific training programs completed across national and international institutions.
