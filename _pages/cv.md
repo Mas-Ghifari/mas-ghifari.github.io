@@ -79,7 +79,17 @@ author_profile: true
       
       {% for item in published_papers limit: 20 %}
       <li>
-        {{ item.authors }} ({{ item.year }}). <b>"{{ item.title }}"</b>. <i>{{ item.venue }}</i>.
+        {{ item.authors }} ({{ item.year }}). 
+        <b>"
+          {% if item.doi %}
+            <a href="{{ item.doi }}" target="_blank" style="color: inherit; text-decoration: none;">{{ item.title }}</a>
+          {% elsif item.url %}
+            <a href="{{ item.url }}" target="_blank" style="color: inherit; text-decoration: none;">{{ item.title }}</a>
+          {% else %}
+            {{ item.title }}
+          {% endif %}
+        "</b>. 
+        <i>{{ item.venue }}</i>.
         {% if item.type %} <span style="font-size: 0.85em; color: #555;">[{{ item.type }}]</span>{% endif %}
       </li>
       {% endfor %}
