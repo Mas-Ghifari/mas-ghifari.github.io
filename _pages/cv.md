@@ -164,26 +164,25 @@ author_profile: true
     </ul>
   </div>
 
-  <!-- Section: Organizations -->
-  <div id="sec-orgs" class="cv-section">
+  <!-- Section: Professional Affiliations -->
+  <div id="sec-affiliations" class="cv-section">
     <h3 style="margin-top: 20px;">PROFESSIONAL AFFILIATIONS</h3>
     <ul>
       {% for item in site.data.portfolio.organizations %}
-      <li><b>{{ item.name }}</b> &mdash; {{ item.role }} ({{ item.year }})</li>
+      <li><b>{{ item.name }}</b> &mdash; {{ item.role }} ({{ item.level }}) [{{ item.period }}]</li>
       {% endfor %}
     </ul>
   </div>
 
   <!-- Section: Community Services -->
-  <div id="sec-services" class="cv-section">
+  <div id="sec-community" class="cv-section">
     <h3 style="margin-top: 20px;">COMMUNITY SERVICES</h3>
     <ul>
       {% for item in site.data.portfolio.community_services %}
-      <li><b>{{ item.title }}</b> {% if item.venue %}({{ item.venue }}){% endif %} &mdash; {{ item.year }}</li>
+      <li><b>{{ item.title }}</b> {% if item.funder and item.funder != "" %}<i>({{ item.funder }})</i>{% endif %} &mdash; {{ item.year }}</li>
       {% endfor %}
     </ul>
   </div>
-</div>
 
 <script>
 function toggleSection(sectionId) {
