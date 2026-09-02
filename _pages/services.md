@@ -9,17 +9,38 @@ Below is the record of professional affiliations, academic reviews, community se
 
 ---
 
-### PROFESSIONAL AFFILIATIONS & MEMBERSHIPS
+<h3>PROFESSIONAL AFFILIATIONS & MEMBERSHIPS</h3>
 
-| Year | Organization Name | Position / Level |
-| :---: | :--- | :--- |
-| 2026–Present | **IEEE** (Institute of Electrical and Electronics Engineers) | Member / International |
-| 2024–Present | **APTIKOM** (Asosiasi Pendidikan Tinggi Informatika dan Komputer) | Member / National |
+<table>
+  <thead>
+    <tr>
+      <th style="width: 20%; text-align: center;">Year</th>
+      <th>Organization Name</th>
+      <th style="width: 30%;">Position / Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in site.data.portfolio.organizations %}
+      <tr>
+        <td style="text-align: center;">{{ item.period }}</td>
+        <td><b>{{ item.name }}</b></td>
+        <td>{{ item.role }} / {{ item.level }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
----
+<hr style="margin: 30px 0;">
 
-### COMMUNITY SERVICES & OUTREACH
+<h3>COMMUNITY SERVICES & OUTREACH</h3>
 
-* **2025**: Implementation of Web-Based School Quality Assurance Information System for Vocational High Schools (SMK).
-* **2025**: Pemberdayaan Petani Anggur Melalui Inovasi Sistem Irigasi Otomatis Berbasis IoT di Kampung Anggur Plumbungan (DRP UMY).
-* **2023**: Pelatihan dan Kompetisi dalam Rangka Pengenalan Teknologi Metaverse kepada Siswa SMA/SMK (P2MI ITB).
+<ul>
+  {% for item in site.data.portfolio.community_services %}
+    <li>
+      <b>{{ item.year }}</b>: {{ item.title }}
+      {% if item.funder and item.funder != "" %}
+        <i>({{ item.funder }})</i>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
