@@ -482,6 +482,10 @@ certifications:
     url: "https://umyac-my.sharepoint.com/:b:/g/personal/nasyan_taufiq_umy_ac_id/IQCjkEJUHpPcR7tlySb6FBkaAUn3Pdz-J7RuvJAZ0rTfeN4?e=gIrNVo"
 
 organizations:
+  - name: "ISAC (International Association of Applied Computing)"
+    role: "Senior Member"
+    level: "International"
+    period: "2026–Present"
   - name: "IEEE (Institute of Electrical and Electronics Engineers)"
     role: "Member"
     level: "International"
