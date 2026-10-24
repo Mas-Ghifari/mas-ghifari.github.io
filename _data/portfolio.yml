@@ -203,13 +203,49 @@ publications:
     corresponding_author: "Al Ghifari, N. T."
 # ==============================
 # CONFERENCE PAPERS 2026
-# ==============================
+# ============================== 	 
+  - year: 2026
+    title: "Evaluating Local-Global Representation in CNN-ViT Hybrid for OSCC Histopathological Classification with Grad-CAM++"
+    authors: "Putri, M. A., Al Ghifari, N. T."
+    venue: "International Conference on Applied Artificial Intelligence, Data Engineering and Sciences (ICAIDES)"
+    type: "Conference Paper"
+    pages: "1-5"
+    corresponding_author: "Al Ghifari, N. T."
+  - year: 2026
+    title: "Empirical Evidence That Synthetic Oversampling is Not Universally Superior for Industrial Predictive Maintenance: A Comparative Study on the AI4I 2020 Dataset"
+    authors: "Rayyan, S. R., Al Ghifari, N. T."
+    venue: "International Conference on Applied Artificial Intelligence, Data Engineering and Sciences (ICAIDES)"
+    type: "Conference Paper"
+    pages: "1-5"
+    corresponding_author: "Al Ghifari, N. T."
+  - year: 2026
+    title: "Implementation and Evaluation of an LLM-Based Academic Assistant Chatbot with Tool Calling Architecture"
+    authors: "Al Ghifari, N. T., Syawalqi, G. M., Lukito, Y. O."
+    venue: "International Conference on Electrical and Information Technology (IEIT)"
+    type: "Conference Paper"
+    pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
+  - year: 2026
+    title: "Predicting Helpful Reviews in TikTok User Feedback Using Machine Learning and SHAP Analysis"
+    authors: "Safitri, N. A. Z., Al Ghifari, N. T."
+    venue: "International Conference on Informatics and Computing (ICIC)"
+    type: "Conference Paper"
+    pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
+  - year: 2026
+    title: "Comparative Analysis of Apache Spark-Based Machine Learning Models and Traditional Approaches to Classification of Obesity Rates"
+    authors: "Pambudi, R. L, Al Ghifari, N. T., Arifah, L."
+    venue: "International Conference on Artificial Intelligence and Technological Solutions (ICAITech)"
+    type: "Conference Paper"
+    pages: "1-6"
+    corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "A Comparative Performance Analysis of YOLOv5 and YOLOv8 on Raspberry Pi 4 and 5 Platforms for Edge Intelligence-Based Real-Time Pest Monitoring"
     authors: "Al Ghifari, N. T., Putri, I. A., Putry, D. K., Rausyanfikri, D. N., Ulinnuha, N. A., Huda, M. F."
     venue: "International Conference on Information Technology and Computing (ICITCOM)"
     type: "Conference Paper"
-    pages: "1-6"
+    pages: "235-240"
+    url: "https://doi.org/10.1109/ICITCOM70739.2026.11714396"
     corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Performance and Security Optimization of IoT-Based Precision Irrigation via Hybrid HTTP-WebSocket Architecture"
@@ -223,21 +259,24 @@ publications:
     authors: "Al Ghifari, N. T., Olivia, N., Bayu, F. V., Rahmah, A. J."
     venue: "International Conference on Information Technology and Computing (ICITCOM)"
     type: "Conference Paper"
-    pages: "1-6"
+    pages: "169-174"
+    url: "https://doi.org/10.1109/ICITCOM70739.2026.11714423"
     corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "A Comparative Study of Supervised, Anomaly-Based, and Ensemble Learning Approaches for Credit Card Fraud Detection Under Extreme Class Imbalance"
     authors: "Al Ghifari, N. T., Tjappe, A. F. P. Y., Adriano, F. B."
     venue: "4th IEEE International Conference on Artificial Intelligence and Mechatronics Systems (AIMS)"
     type: "Conference Paper"
-    pages: "1-6"
+    pages: "1-8"
+    url: "https://doi.org/10.1109/AIMS71270.2026.11712888"
     corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Exploring Health Biomarker Patterns Using Clustering and Post-Clustering Analysis of Smoking Status"
     authors: "Al Ghifari, N. T., Dhafa, M., Arifah, L."
     venue: "Bioinformatics, Biomedical Engineering, and Biotechnology Exploring New Frontiers in Healthcare (BIOXPLORE)"
     type: "Conference Paper"
-    pages: "1-6"
+    pages: "19-24"
+    url: "https://doi.org/10.1109/BIOXPLORE68070.2026.11709956"
     corresponding_author: "Al Ghifari, N. T."
   - year: 2026
     title: "Modeling the Dynamics of Food Security Index Growth Using District-Level Panel Data: Evidence from Indonesia"
